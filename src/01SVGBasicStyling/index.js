@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 const BasicStyling=()=>{
   return (
     <div>
-      <Link to="/" style={{color: "blue"}}>back</Link>
-      <br/>
+      <Link to="/" style={{color: "blue"}}> back to index</Link>
+      <hr/>
       <strong>01 svg styling basics</strong>
       <hr/>
       <div>
@@ -24,8 +24,8 @@ const BasicStyling=()=>{
         <hr/>
 
         <SVGWrapper
-          width='100'
-          height='100'
+          width={100}
+          height={100}
           >
           <Smiley/>
         </SVGWrapper>
