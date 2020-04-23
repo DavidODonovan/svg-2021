@@ -22,6 +22,13 @@ const BasicStyling=()=>{
       <svg style={{height:"100px", width:"100px", background:"red"}}>
       </svg>
       <hr/>
+      Note that you can change the size of your viewport/'window' by using the heigh and width attributes:
+      <br/>
+      <svg style={{height:"150", width:"100px", background:"red"}}>
+      </svg>
+      <br/>
+      This viewport is 150px high, and 100px wide.
+      <hr/>
       <img src={sketch1} width="500px"/>
       <hr/>
 

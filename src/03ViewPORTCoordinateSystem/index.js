@@ -17,7 +17,7 @@ const BasicStyling=()=>{
       <br/>
       <p>
         The initial viewport coordinate system is a coordinate system established on the viewport.
-        I think of it as sort of drawing a grid on a window, or the lines inside the viewfinder of a camera: your coordinate system is on this 'glass' pane, and you look out onto the 'world' through this glass pane.
+        I think of it as sort of drawing a grid on a window, or the lines inside the viewfinder of a camera: your coordinate system is on this 'glass' pane, and you look out onto the 'world' through this glass pane. And remember you can sort of stretch and pull the size of your window to any size, just by using the width and height attributes of the svg element.
       </p>
       <br/>
 
