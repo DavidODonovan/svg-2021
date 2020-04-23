@@ -13,5 +13,8 @@ export const SVGWrapper=styled.div`
     stroke-linecap: round;
     stroke-linejoin: round;
     pointer-events: none;
+
+    width: ${({width})=>width ? `${width}px`: null};
+    height: ${({height})=>height ? `${height}px`: null};
   }
 `;

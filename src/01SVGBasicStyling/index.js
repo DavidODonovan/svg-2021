@@ -9,12 +9,24 @@ const BasicStyling=()=>{
     <div>
       <Link to="/" style={{color: "blue"}}>back</Link>
       <hr/>
-      <div style={{position: "relative"}}>
+      <div>
         <SVGWrapper>
           <Smiley/>
         </SVGWrapper>
         <div>
           Note if no width or height is specified, an svg defaults to a width of 300px and height of 150px.
+        </div>
+
+        <hr/>
+
+        <SVGWrapper
+          width='100'
+          height='100'
+          >
+          <Smiley/>
+        </SVGWrapper>
+        <div>
+          svg with width & height explicitly set to 100px.
         </div>
       </div>
     </div>
