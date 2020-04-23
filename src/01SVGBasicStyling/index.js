@@ -8,15 +8,19 @@ const BasicStyling=()=>{
   return (
     <div>
       <Link to="/" style={{color: "blue"}}>back</Link>
+      <br/>
+      <strong>01 svg styling basics</strong>
       <hr/>
       <div>
+        See style.js to look at styling for stroke-linecap etcetera.
         <SVGWrapper>
           <Smiley/>
         </SVGWrapper>
-        <div>
-          Note if no width or height is specified, an svg defaults to a width of 300px and height of 150px.
-        </div>
-
+        <p>Note if width or height is not specified, the svg defaults to a width of 300px and height of 150px.
+        </p>
+        <br/>
+        <p>The width and height of the svg element are the dimensions of the <strong>viewport</strong>.</p>
+        <br/>
         <hr/>
 
         <SVGWrapper
@@ -28,6 +32,8 @@ const BasicStyling=()=>{
         <div>
           svg with width & height explicitly set to 100px.
         </div>
+        <br/>
+        <hr/>
       </div>
     </div>
   );

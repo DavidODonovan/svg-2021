@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import {  GlobalNormalizeCSS, GlobalResetCSS, GlobalTypographyCSS, GlobalWebkitScrolling } from './globalStyles';
 import Nav from './00Nav';
 import SVGBasicStyling from './01SVGBasicStyling';
+import SVGViewport from './02SVGViewport';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <Router>
         <Route path="/" exact={true} component={Nav}/>
         <Route path={`/svg-basic-styling`} component={SVGBasicStyling}/>
+        <Route path={`/svg-viewport`} component={SVGViewport}/>
+
       </Router>
     </div>
   );
