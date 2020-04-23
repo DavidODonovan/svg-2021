@@ -22,7 +22,7 @@ const BasicStyling=()=>{
       <svg style={{height:"100px", width:"100px", background:"red"}}>
       </svg>
       <hr/>
-      <img src={sketch1} width="90%"/>
+      <img src={sketch1} width="500px"/>
       <hr/>
 
     </div>

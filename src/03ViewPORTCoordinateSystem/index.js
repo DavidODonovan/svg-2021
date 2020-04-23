@@ -12,7 +12,8 @@ const BasicStyling=()=>{
       <strong>03 viewPORT coordinate system</strong>
       <hr/>
       <strong>viewport coordinate system</strong>
-      <img src={sketch1} width="90%"/>
+      <br/>
+      <img src={sketch1} width="500px"/>
       <br/>
       <p>
         The initial viewport coordinate system is a coordinate system established on the viewport.
