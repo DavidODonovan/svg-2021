@@ -9,12 +9,13 @@ const BasicStyling=()=>{
     <div>
       <Link to="/" style={{color: "blue"}}>back to index</Link>
       <hr/>
-      <strong>04 USER coordinate system</strong>
+      <strong>05 viewBox attribute</strong>
       <hr/>
-        <p>The initial user coordinate system is the coordinate system established on the SVG canvas. This coordinate system is initially identical to the viewport coordinate system—it has its origin at the top left corner of the viewport with the positive x-axis pointing towards the right, the positive y-axis pointing down.
+
+        <p>
+          Using the viewBox attribute, the initial <strong>user coordinate system </strong>can be modified so that it is not identical to the <strong>viewport coordinate system </strong>anymore. 
         </p>
         <br/>
-
 
       <img src={sketch1} width="90%"/>
       <br/>

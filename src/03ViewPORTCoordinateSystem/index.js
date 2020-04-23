@@ -1,6 +1,5 @@
 import React from 'react';
-import sketch1 from './sketch1.jpg';
-import { ReactComponent as Smiley } from './smiley.svg';
+import sketch1 from '../_images/sketch1.jpg';
 import { Grid, SVGWrapper } from './style';
 import { Link } from 'react-router-dom';
 
@@ -16,9 +15,12 @@ const BasicStyling=()=>{
       <img src={sketch1} width="90%"/>
       <br/>
       <p>
-        The initial viewport coordinate system is a coordinate system established on the viewport, with the origin at the top left corner of the viewport at point (0, 0), the positive x-axis pointing towards the right, the positive y-axis pointing down, and one unit in the initial coordinate system equals one “pixel” in the viewport. This coordinate system is similar to the coordinate system established on an HTML element with a CSS box model. Simple enough.
-
+        The initial viewport coordinate system is a coordinate system established on the viewport.
+        I think of it as sort of drawing a grid on a window, or the lines inside the viewfinder of a camera: your coordinate system is on this 'glass' pane, and you look out onto the 'world' through this glass pane.
       </p>
+      <br/>
+
+      <p> This coordinate system is just like normal html/css coordinates with origin at top left, the x-axis extending to the right, and y-axis extending downward. Simple enough.</p>
 
 
     </div>

@@ -22,6 +22,10 @@ const NavMenu=()=>{
           <MyLink to={`/user-coordinate-system`}>04 USER coordinate system</MyLink>
         </li>
 
+        <li>
+          <MyLink to={`/viewbox-attribute`}>05 viewBox attribute</MyLink>
+        </li>
+
       </NavBox>
     </nav>
   );

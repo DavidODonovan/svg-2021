@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactComponent as Smiley } from './smiley.svg';
+import { ReactComponent as Smiley } from '../_images/smiley.svg';
 import { Grid, SVGWrapper } from './style';
 import { Link } from 'react-router-dom';
 
@@ -30,7 +30,7 @@ const BasicStyling=()=>{
           <Smiley/>
         </SVGWrapper>
         <div>
-          svg with width & height explicitly set to 100px.
+          svg with width & height explicitly set to 100px, which makes for a viewport of 100 x 100 pixels.
         </div>
         <br/>
         <hr/>
