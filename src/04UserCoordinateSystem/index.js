@@ -11,7 +11,11 @@ const BasicStyling=()=>{
       <hr/>
       <strong>04 USER coordinate system</strong>
       <hr/>
-        <p>The initial user coordinate system is the coordinate system established on the SVG <em>canvas</em>. This coordinate system is initially identical to the viewport coordinate system—it has its origin at the top left corner of the viewport with the positive x-axis pointing towards the right, the positive y-axis pointing down.
+        <p>The initial <strong>user</strong> coordinate system is the coordinate system established on the SVG <em>canvas</em>.
+        </p>
+        <br/>
+        <p>
+         <strong>This coordinate system is initially identical to the <em>viewport </em>coordinate system</strong> — the origin is at top left of the viewport with the positive x-axis extending to the right, the positive y-axis extending down.
         </p>
         <br/>
 
