@@ -117,6 +117,22 @@ const BasicStyling=()=>{
       </SVGWrapper>
       <br/>
 
+      <p>
+        negative x/y translations: viewBox="-10 -10 100 100" 
+
+      <SVGWrapper >
+        <svg
+          width="100"
+          height="100"
+          viewBox="-10 -10 100 100"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M50,10 A40,40,1,1,1,50,90 A40,40,1,1,1,50,10 M30,40 Q36,35,42,40 M58,40 Q64,35,70,40 M30,60 Q50,75,70,60 Q50,75,30,60"></path>
+        </svg>
+      </SVGWrapper>
+      <br/>
+
+      </p>
+
       <ImageFilter>
         <img src={sketch1} width="90%"/>
       </ImageFilter>
