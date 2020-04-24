@@ -47,12 +47,51 @@ const BasicStyling=()=>{
       So we use the <strong>viewBox </strong>attribute to <strong>customise our user-coordinate-system</strong>, which means essentially the viewBox attribute is how we <strong><em>scale</em></strong> our 'photo' of the svg-world. So the viewBox attribute is a <em>scaling mechanism.</em>
       <br/>
       <br/>
-      <SVGWrapper width={100} height={100}>
-        <svg xmlns="http://www.w3.org/2000/svg">
+
+      Here is our smiley face with <strong>no viewBox</strong> setting;
+      <br/>
+      <br/>
+      <SVGWrapper >
+        <svg
+          width="100"
+          height="100"
+          xmlns="http://www.w3.org/2000/svg">
           <path d="M50,10 A40,40,1,1,1,50,90 A40,40,1,1,1,50,10 M30,40 Q36,35,42,40 M58,40 Q64,35,70,40 M30,60 Q50,75,70,60 Q50,75,30,60"></path>
         </svg>
       </SVGWrapper>
       <br/>
+
+      <hr/>
+
+      And here is our smiley face with viewBox set to "0 0 50 50";
+      <br/>
+      <br/>
+      <SVGWrapper >
+        <svg
+          width="100"
+          height="100"
+          viewBox="0 0 50 50"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M50,10 A40,40,1,1,1,50,90 A40,40,1,1,1,50,10 M30,40 Q36,35,42,40 M58,40 Q64,35,70,40 M30,60 Q50,75,70,60 Q50,75,30,60"></path>
+        </svg>
+      </SVGWrapper>
+      <hr/>
+      <br/>
+
+      Watch what happens we change the x/y coords of the viewBox like so: "10 10 50 50";
+      <br/>
+      <br/>
+      <SVGWrapper >
+        <svg
+          width="100"
+          height="100"
+          viewBox="10 10 50 50"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M50,10 A40,40,1,1,1,50,90 A40,40,1,1,1,50,10 M30,40 Q36,35,42,40 M58,40 Q64,35,70,40 M30,60 Q50,75,70,60 Q50,75,30,60"></path>
+        </svg>
+      </SVGWrapper>
+      <br/>
+    So what has happened here is...
 
 
       <hr/>
