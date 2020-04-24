@@ -18,3 +18,7 @@ export const SVGWrapper=styled.div`
     height: ${({height})=>height ? `${height}px`: null};
   }
 `;
+
+export const ImageFilter=styled.div`
+  filter: sepia(50%) brightness(120%);
+`;

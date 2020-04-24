@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, SVGWrapper } from './style';
+import { Grid, SVGWrapper, ImageFilter } from './style';
 import { Link } from 'react-router-dom';
 import sketch1 from '../_images/sketch1.jpg';
 import { ReactComponent as Smiley } from '../_images/smiley.svg';
@@ -78,9 +78,10 @@ const BasicStyling=()=>{
       <hr/>
       <br/>
 
-      Watch what happens we change the x/y coords of the viewBox like so: "10 10 50 50";
+      Watch what happens when we change the x/y coords of the viewBox like so: "10 10 50 50";
       <br/>
       <br/>
+
       <SVGWrapper >
         <svg
           width="100"
@@ -91,12 +92,34 @@ const BasicStyling=()=>{
         </svg>
       </SVGWrapper>
       <br/>
-    So what has happened here is...
-
 
       <hr/>
+      So the first thing to note about these examples is that the width and height of the <em>svg viewports</em> have not changed; they remain set to 100 x 100. So that is constantly the size of our 'photos' as they appear in the browser window.
+      <br/>
+      <br/>
+      The second thing is that the viewBox has sort of 'grabbed' or zoomed into an area that is 50 x 50 pixels, taken a 'photo', then given that to the parent svg element and said "Hey! Here you go, this is the view using those settings". Then the svg has enlarged or <em>scaled</em> that 'photo' to sit inside the 'frame' of the svg-viewport.
+      <br/>
+      <br/>
+      The third thing to note is that by altering the x/y coords of the viewBox we can move that 50 x 50 square 'lens' around, and take a 'photo' of different areas of the svg-landscape. So we are moving the 50 x 50 viewBox by altering the x/y coords in the settings. It's actually all quite simple once you break it down.
+      <hr/>
+      <br/>
 
-      <img src={sketch1} width="90%"/>
+      And if we want to 'zoom in' closer, and get a 'photo' of the eye, we can do so by setting the viewBox to "15 15 30 30".
+
+      <SVGWrapper >
+        <svg
+          width="100"
+          height="100"
+          viewBox="15 15 30 30"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M50,10 A40,40,1,1,1,50,90 A40,40,1,1,1,50,10 M30,40 Q36,35,42,40 M58,40 Q64,35,70,40 M30,60 Q50,75,70,60 Q50,75,30,60"></path>
+        </svg>
+      </SVGWrapper>
+      <br/>
+
+      <ImageFilter>
+        <img src={sketch1} width="90%"/>
+      </ImageFilter>
       <br/>
     </div>
   );
