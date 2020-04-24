@@ -19,9 +19,14 @@ const BasicStyling=()=>{
         <p>Note if width or height is not specified, the svg defaults to a width of 300px and height of 150px.
         </p>
         <br/>
-        <p>The width and height of the svg element are the dimensions of the <strong>viewport</strong>.</p>
+        <p style={{color: 'red'}}>
+        If you set the height or width (or both) to <strong>auto </strong> for these SVGs the default size for HTML replaced elements will be used: 300px wide, 150px tall....
+        </p>
         <br/>
-        <hr/>
+        <p>
+        Also, the default size for SVG files that are opened directly in their own browser tab is the full size of the browser window.  width: 100vw; height: 100vh;
+        </p>
+        <br/>
 
         <SVGWrapper
           width={100}
@@ -30,7 +35,9 @@ const BasicStyling=()=>{
           <Smiley/>
         </SVGWrapper>
         <div>
-          svg with width & height explicitly set to 100px, which makes for a viewport of 100 x 100 pixels.
+        <p> This smiley face svg has its width & height explicitly set to 100px, which makes for a <strong>viewport</strong> of 100 x 100 pixels.</p>
+        <p>So the width and height of the svg element are the width and height of the <strong>svg viewport</strong>.</p>
+        <br/>
         </div>
         <br/>
         <hr/>

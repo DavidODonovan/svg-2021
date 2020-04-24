@@ -13,7 +13,6 @@ const BasicStyling=()=>{
       <hr/>
       <strong>viewport coordinate system</strong>
       <br/>
-      <img src={sketch1} width="500px"/>
       <br/>
       <p>
         The initial viewport coordinate system is a coordinate system established on the viewport.
@@ -23,6 +22,9 @@ const BasicStyling=()=>{
 
       <p> This coordinate system is just like normal html/css coordinates with origin at top left, the x-axis extending to the right, and y-axis extending downward. Simple enough.</p>
 
+      <br/>
+      <img src={sketch1} width="500px"/>
+      <br/>
 
     </div>
   );

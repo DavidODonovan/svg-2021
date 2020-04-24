@@ -11,11 +11,11 @@ const BasicStyling=()=>{
       <hr/>
       <strong>04 USER coordinate system</strong>
       <hr/>
-        <p>The initial <strong>user</strong> coordinate system is the coordinate system established on the SVG <em>canvas</em>.
+        <p>The <strong>user coordinate system </strong> is the coordinate system on the SVG element, which you might think of as the <em>canvas</em> or  the svg-world where distance stretches infinitely to every horizon. I think of this coordinate system as kind of like if I was standing on this svg landscape, that I could draw in chalk on the ground a metre by metre grid, radiating outwards forever.
         </p>
         <br/>
         <p>
-         <strong>This coordinate system is initially identical to the <em>viewport </em>coordinate system</strong> — the origin is at top left of the viewport with the positive x-axis extending to the right, the positive y-axis extending down.
+         This <strong>user coordinate system </strong>is initially identical to the <strong>viewport coordinate system</strong>, in other words it is a one to one mapping. We can change the way the user coord system maps to the viewport coord system by setting an attribute called the <strong>viewBox</strong>.
         </p>
         <br/>
 
