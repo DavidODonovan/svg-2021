@@ -21,7 +21,7 @@ const BasicStyling=()=>{
       <hr/>
       <p>You might think of this as being kind of like an astronaut in a satellite orbiting high above the earth. The astronaut has a big window in the bottom of the satellite and can look down at the earth floating by.</p>
       <br/>
-      <p>Here we have a viewport of 100px onto an svg element, which has a background colour of red: and a yellow smiley face 'painted' onto the surface of the svg world. </p>
+      <p>Here we have a viewport of 100 x 100 which opens a 'window' onto our svg element or 'canvas'. Our canvas stretches out to infinity in every direction, but all we can see is the view that this 100 x 100 viewport reveals to us. The surface of that canvas or 'world' has been given a background-color of red, and our yellow smiley face is 'painted' onto the surface of the svg world at a size and location of our choosing. </p>
       <br/>
       <strong>viewport</strong>
       <br/>
@@ -52,7 +52,7 @@ const BasicStyling=()=>{
 
       This viewport is 150px high, and 400px wide.
       <br/>
-      Also note that the size of the smiley face <em>has not changed at all</em> - remember the viewport is just a window onto an imaginary svg world that stretches out forever in every direction. Kind of like flatland. You might think of the smiley face not as an image but as a lake or a mountain in flatland: it is defined by a series of lines and planes stretching from coordinate to coordinate.
+      Also note that the size of the smiley face <em>has not changed at all</em>. You might have expected that by changing the dimensions of our viewport we might change enlarge or stretch the smiley face, but that is not how svgs work; remember the viewport is just a window onto an imaginary svg world that stretches out forever in every direction. Kind of like flatland. You might think of the smiley face not as an image but as a lake or a mountain in flatland: it is defined by a series of lines and planes stretching from coordinate to coordinate.
       <br/>
       <br/>
       We can therefore 'crop' our 'image' by changing the shape of our viewport like so;

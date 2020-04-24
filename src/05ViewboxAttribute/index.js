@@ -104,7 +104,7 @@ const BasicStyling=()=>{
       <hr/>
       <br/>
 
-      And if we want to 'zoom in' closer, and get a 'photo' of the eye, we can do so by setting the viewBox to "15 15 30 30".
+      If we want to 'zoom in' closer, and get a 'photo' of the eye, we can do so by setting the viewBox to "15 15 30 30".
 
       <SVGWrapper >
         <svg
@@ -118,7 +118,7 @@ const BasicStyling=()=>{
       <br/>
 
       <p>
-        negative x/y translations: viewBox="-10 -10 100 100" 
+        negative x/y translations: viewBox="-10 -10 100 100"
 
       <SVGWrapper >
         <svg
@@ -131,6 +131,7 @@ const BasicStyling=()=>{
       </SVGWrapper>
       <br/>
 
+      The fourth and final thing to note about these introductory examples is that we have been using the <em>same aspect ratio</em> for each one; the initial 'frame' size was set to 100 x 100, and subsequent frame sizes were 50 x 50 and  30 x 30. We will look at differences between viewport and viewBox aspect ratios in the next section.
       </p>
 
       <ImageFilter>
