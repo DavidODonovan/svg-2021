@@ -97,7 +97,7 @@ const BasicStyling=()=>{
       So the first thing to note about these examples is that the width and height of the <em>svg viewports</em> have not changed; they remain set to 100 x 100. So that is constantly the size of our 'photos' as they appear in the browser window.
       <br/>
       <br/>
-      The second thing is that the viewBox has sort of 'grabbed' or zoomed into an area that is 50 x 50 pixels, taken a 'photo', then given that to the parent svg element and said "Hey! Here you go, this is the view using those settings". Then the svg has enlarged or <em>scaled</em> that 'photo' to sit inside the 'frame' of the svg-viewport.
+      The second thing is that the viewBox has sort of 'grabbed' or zoomed into an area that is 50 x 50 pixels, taken a 'photo', then given that to the parent svg viewport and said "Hey! Here you go, this is the view using those settings". Then the svg has enlarged or <em>scaled</em> that 'photo' to sit inside the 'frame' of the svg-viewport.
       <br/>
       <br/>
       The third thing to note is that by altering the x/y coords of the viewBox we can move that 50 x 50 square 'lens' around, and take a 'photo' of different areas of the svg-landscape. So we are moving the 50 x 50 viewBox by altering the x/y coords in the settings. It's actually all quite simple once you break it down.
@@ -131,7 +131,36 @@ const BasicStyling=()=>{
       </SVGWrapper>
       <br/>
 
-      The fourth and final thing to note about these introductory examples is that we have been using the <em>same aspect ratio</em> for each one; the initial 'frame' size was set to 100 x 100, and subsequent frame sizes were 50 x 50 and  30 x 30. We will look at differences between viewport and viewBox aspect ratios in the next section.
+      The fourth and final thing to note about these introductory examples is that we have been using the <em>same aspect ratio</em> for each one; the initial 'frame' size was set to 100 x 100, and subsequent frame sizes were 50 x 50 and  30 x 30.
+      </p>
+      <br/>
+      <hr/>
+      <br/>
+
+      <p>
+        Lets set the viewBox aspect-ratio to a value that <em>doesn't</em> match the viewport aspect-ratio  like so;
+        <br/>
+        viewBox="0 0 400 100".
+      </p>
+      <br/>
+
+      <SVGWrapper >
+        <svg
+          width="100"
+          height="100"
+          viewBox="0 0 400 100"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M50,10 A40,40,1,1,1,50,90 A40,40,1,1,1,50,10 M30,40 Q36,35,42,40 M58,40 Q64,35,70,40 M30,60 Q50,75,70,60 Q50,75,30,60"></path>
+        </svg>
+      </SVGWrapper>
+      <br/>
+
+      <p>
+        Hmmm... what's going on here? Well we have set the width of the viewBox to 400, and the height to 100, so the viewBox is going to have a small height to width ratio, making is stretch out horizontally and crush down vertically. The smiley face has <em>not</em> been distorted, and it looks like the viewport 'lens' has sort of zoomed back to fit the whole of the viewBox into the 'frame'. So by default the image we get of the smiley face will <em>not be stretched or distorted in any way.</em>
+      </p>
+      <br/>
+      <p>
+        We can have control over how the viewport deals with viewBoxes that have differing aspect-ratios by using the <strong>'preserveAspectRatio'</strong> attribute. We will look at 'preserveAspectRatio' in the next section.
       </p>
 
       <ImageFilter>
