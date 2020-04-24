@@ -23,7 +23,11 @@ const NavMenu=()=>{
         </li>
 
         <li>
-          <MyLink to={`/viewbox-attribute`}>05 viewBox attribute</MyLink>
+          <MyLink to={`/viewBox-attribute`}>05 viewBox attribute</MyLink>
+        </li>
+
+        <li>
+          <MyLink to={`/preserveAspectRatio-attribute`}>06 preserveAspectRatio attribute</MyLink>
         </li>
 
       </NavBox>
