@@ -19,7 +19,9 @@ const BasicStyling=()=>{
       <hr/>
       <img src={sketch1} width="500px"/>
       <hr/>
-      <p>here is a viewport of 100px onto an svg element, which has a background colour of red: </p>
+      <p>You might think of this as being kind of like an astronaut in a satellite orbiting high above the earth. The astronaut has a big window in the bottom of the satellite and can look down at the earth floating by.</p>
+      <br/>
+      <p>Here we have a viewport of 100px onto an svg element, which has a background colour of red: and a yellow smiley face 'painted' onto the surface of the svg world. </p>
       <br/>
       <strong>viewport</strong>
       <br/>
