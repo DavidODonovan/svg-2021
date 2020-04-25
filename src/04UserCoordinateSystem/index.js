@@ -1,13 +1,15 @@
 import React from 'react';
 import sketch1 from '../_images/sketch1.jpg';
-import { Grid, SVGWrapper } from './style';
+import { Grid, SVGWrapper, BackLink } from './style';
 import { Link } from 'react-router-dom';
 
 
 const BasicStyling=()=>{
   return (
     <div>
-      <Link to="/" style={{color: "blue"}}>back to index</Link>
+      <BackLink>
+        <Link to="/" style={{color: "blue"}}>back to index</Link>
+      </BackLink>
       <hr/>
       <strong>04 USER coordinate system</strong>
       <hr/>

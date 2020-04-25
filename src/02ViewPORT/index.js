@@ -1,6 +1,6 @@
 import React from 'react';
 import sketch1 from '../_images/sketch1.jpg';
-import { Grid, SVGWrapper } from './style';
+import { Grid, SVGWrapper, BackLink } from './style';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Smiley } from '../_images/smiley.svg';
 import imageVersion from '../_images/smiley.svg';
@@ -9,7 +9,9 @@ import imageVersion from '../_images/smiley.svg';
 const BasicStyling=()=>{
   return (
     <div>
-      <Link to="/" style={{color: "blue"}}>back to index</Link>
+      <BackLink>
+        <Link to="/" style={{color: "blue"}}>back to index</Link>
+      </BackLink>
       <hr/>
       <strong>02 svg viewport</strong>
       <hr/>

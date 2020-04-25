@@ -22,3 +22,13 @@ export const SVGWrapper=styled.div`
 export const ImageFilter=styled.div`
   filter: sepia(50%) brightness(120%);
 `;
+
+
+export const BackLink=styled.div`
+  position: fixed;
+  top: 0;
+  right: 0;
+  left:0;
+  background: #fff;
+  border-bottom: 2px solid hsla(0, 0%, 40%, 0.8);
+`;
