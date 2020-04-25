@@ -8,6 +8,7 @@ import ViewPORTCoordinateSystem from './03ViewPORTCoordinateSystem';
 import UserCoordinateSystem from './04UserCoordinateSystem';
 import ViewboxAttribute from './05ViewboxAttribute';
 import PreserveAspectRatio from './06PreserveAspectRatio';
+import PreserveAspectRatioExamples from './07PreserveAspectRatioExamples';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path={`/user-coordinate-system`} component={UserCoordinateSystem}/>
         <Route path={`/viewBox-attribute`} component={ViewboxAttribute}/>
         <Route path={`/preserveAspectRatio-attribute`} component={PreserveAspectRatio}/>
+        <Route path={`/preserveAspectRatio-examples`} component={PreserveAspectRatioExamples}/>
 
       </Router>
     </div>

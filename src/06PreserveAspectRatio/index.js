@@ -98,6 +98,16 @@ const BasicStyling=()=>{
       <p>
         As you can see when we set {`<align>`} to "none", our 'photo' will be scaled to fit inside the viewport without maintaining the aspect ratio. So the 400px width is pushed inside the 'frame', and the 100px height is expanded up to touch the top and bottom of the frame. So our 'lens' has grabbed a 100 x 400 shot of the svg-landscape, and handed it up to the viewport, which has expanded and contracted the shot so that it takes up the entire viewPort frame - and that becomes our 'photo'.
       </p>
+      
+      <p>
+      All other values of preserveAspectRatio force uniform scaling while preserving the viewbox’s aspect ratio, and specify how to align the viewbox inside the viewport. We’ll get into the values of align shortly.
+      </p>
+      <br/>
+
+      <p>
+      The last argument, meetOrSlice is also optional, and it defaults to meet. This argument specifies whether or not the entire viewBox should be visible inside the viewport. If provided, it is separated from the align parameter by one or more spaces. For example: preserveAspectRatio = "xMinYMin slice"
+      </p>
+      <br/>
 
 
       <ImageFilter>
