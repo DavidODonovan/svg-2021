@@ -12,11 +12,6 @@ const BlendingPalette=()=>{
 
       <GridWrapper>
         <PaletteModule/>
-        <PaletteModule/>
-        <PaletteModule/>
-        <PaletteModule/>
-        <PaletteModule/>
-        <PaletteModule/>
       </GridWrapper>
 
     </div>
