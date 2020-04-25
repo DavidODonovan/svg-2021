@@ -2,15 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { GridItem, SVGWrapper } from './style';
 
 const PaletteModule=()=>{
-  const [preserveAlignX, setPreserveAlignX]=useState('');
-  const [preserveAlignY, setPreserveAlignY]=useState('');
+  const [preserveAlignX, setPreserveAlignX]=useState('xMid');
+  const [preserveAlignY, setPreserveAlignY]=useState('YMid');
   const [preserveAspectRatio, setPreserveAspectRatio]=useState("none");
 
   useEffect(()=>{
-    if(preserveAlignX==="" || preserveAlignY===""){
+    if(preserveAlignX==="none" || preserveAlignY==="none"){
       setPreserveAspectRatio("none");
-      setPreserveAlignX("none");
-      setPreserveAlignY("none");
+    } else {
+      setPreserveAspectRatio(`${preserveAlignX}${preserveAlignY}`)
     }
   }, [preserveAlignX,preserveAlignY])
 
@@ -27,11 +27,13 @@ const PaletteModule=()=>{
     <GridItem>
       alignX:
       <select onChange={changePreserveAlignX} value={preserveAlignX}>
+        <option value="xMid">xMid</option>
         <option value="none">none</option>
       </select>
 
       alignY:
       <select onChange={changePreserveAlignX} value={preserveAlignX}>
+        <option value="YMid">YMid</option>
         <option value="none">none</option>
       </select>
 
@@ -40,8 +42,8 @@ const PaletteModule=()=>{
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="100"
-          height="100"
-          viewBox={`0 0 100 400`}
+          height="50"
+          viewBox={`0 0 100 100`}
           preserveAspectRatio={preserveAspectRatio}
           >
           <path d="M50,10 A40,40,1,1,1,50,90 A40,40,1,1,1,50,10 M30,40 Q36,35,42,40 M58,40 Q64,35,70,40 M30,60 Q50,75,70,60 Q50,75,30,60"></path>
