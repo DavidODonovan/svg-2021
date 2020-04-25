@@ -6,14 +6,6 @@ const PaletteModule=()=>{
   const [preserveAlignY, setPreserveAlignY]=useState('YMid');
   const [preserveAspectRatio, setPreserveAspectRatio]=useState("none");
 
-  useEffect(()=>{
-    if(preserveAlignX==="none" || preserveAlignY==="none"){
-      setPreserveAspectRatio("none");
-    } else {
-      setPreserveAspectRatio(`${preserveAlignX}${preserveAlignY}`)
-    }
-  }, [preserveAlignX,preserveAlignY])
-
   const changePreserveAlignX=(e)=>{
     setPreserveAlignX(e.target.value);
   };
@@ -28,13 +20,11 @@ const PaletteModule=()=>{
       alignX:
       <select onChange={changePreserveAlignX} value={preserveAlignX}>
         <option value="xMid">xMid</option>
-        <option value="none">none</option>
       </select>
 
       alignY:
       <select onChange={changePreserveAlignX} value={preserveAlignX}>
         <option value="YMid">YMid</option>
-        <option value="none">none</option>
       </select>
 
       <div>preserveAspectRatio="{`${preserveAspectRatio}`}"</div>
