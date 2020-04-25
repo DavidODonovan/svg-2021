@@ -10,7 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+
   input[type="color"],
   input[type="date"],
   input[type="datetime"],
@@ -21,14 +21,12 @@ body {
   input[type="password"],
   input[type="search"],
   input[type="tel"],
-  input[type="text"],
   input[type="time"],
   input[type="url"],
   input[type="week"],
-  select:focus,
-  textarea {
-    font-size: calc(10px + 2vmin);
-  }
+  input[type="text"] {
+    font-size: inherit;
+  };
 
 }
 `;

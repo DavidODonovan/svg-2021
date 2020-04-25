@@ -7,3 +7,18 @@ export const GridItem=styled.div`
   border-radius: 5px;
   padding: 0.5em;
 `;
+
+export const SVGWrapper=styled.div`
+  & svg {
+    fill: yellow;
+    stroke: black;
+    background: red;
+    stroke-width: 8px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none;
+
+    width: ${({width})=>width ? `${width}px`: null};
+    height: ${({height})=>height ? `${height}px`: null};
+  }
+`;
