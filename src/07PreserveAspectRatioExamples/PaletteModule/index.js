@@ -10,7 +10,8 @@ const PaletteModule=()=>{
   const[viewBoxWidth, setViewBoxWidth]=useState(100);
   const[viewBoxHeight, setViewBoxHeight]=useState(100);
 
-  const[preserveAspectRatio, setPreserveAspectRatio]=useState("xMidYMid");
+  const[preserveAspectRatio, setPreserveAspectRatio]=useState("xMidYMid meet");
+  const[meetOrSlice, setMeetOrSlice]=useState("meet");
 
   const changeViewPortWidth=(e)=>{
     setViewPortWidth(e.target.value);
@@ -18,6 +19,10 @@ const PaletteModule=()=>{
 
   const changeViewPortHeight=(e)=>{
     setViewPortHeight(e.target.value);
+  };
+
+  const changeMeetOrSlice=(e)=>{
+    setMeetOrSlice(e.target.value);
   };
 
   return (
@@ -69,13 +74,23 @@ const PaletteModule=()=>{
             <div>xmid</div>
             <div>xmax</div>
           </ControlPanelSection>
-          <strong>y</strong>
-          <div>ymin</div>
-          <div>ymid</div>
-          <div>ymax</div>
-          <strong>align</strong>
-          <div>
-          </div>
+
+          <ControlPanelSection style={{gridArea: "y"}}>
+            <strong>y</strong>
+            <div>ymin</div>
+            <div>ymid</div>
+            <div>ymax</div>
+          </ControlPanelSection>
+
+          <ControlPanelSection style={{gridArea: "meetOrSlice"}}>
+            <div>meet-or-slice:
+              <select onChange={changeMeetOrSlice} value={meetOrSlice}>
+                <option value={"meet"}>meet</option>
+                <option value={"slice"}>slice</option>
+              </select>
+            </div>
+          </ControlPanelSection>
+
         </ControlPanelPAR>
 
       </ControlPanel>

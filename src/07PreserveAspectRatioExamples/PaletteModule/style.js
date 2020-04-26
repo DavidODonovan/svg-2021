@@ -44,10 +44,11 @@ export const ControlPanelPAR=styled(ControlPanelSection)`
   display: grid;
   grid-gap: 0.5em;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: auto auto 1fr auto;
   grid-template-areas: "title title"
                        "par par"
-                       "x     y";
+                       "x     y"
+                       "meetOrSlice meetOrSlice";
 `;
 
 export const DisplaySVG=styled.div`
