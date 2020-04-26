@@ -47,9 +47,9 @@ export const DisplaySVG=styled.div`
   align-items: center;
   background-color: hsla(0, 0%, 0%, 0.2);
   & svg {
-    fill: yellow;
-    stroke: black;
-    background: red;
+    fill: hsla(200, 100%, 90%, 0.5);
+    background: hsla(240, 100%, 50%, 0.5);
+    stroke: hsla(240, 100%, 10%, 0.8);
     stroke-width: 8px;
     stroke-linecap: round;
     stroke-linejoin: round;
