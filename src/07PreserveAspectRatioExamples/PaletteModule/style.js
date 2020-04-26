@@ -10,8 +10,8 @@ export const GridItem=styled.div`
 
   display: grid;
   grid-gap: 0.5em;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(100px, 1fr) minmax(100px, 1fr) 1fr;
   grid-template-areas: "controls controls"
                        "controls controls"
                        "display-svg display-svg";
@@ -25,7 +25,7 @@ export const ControlPanel=styled.div`
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto 1fr;
   grid-gap: 0.5em;
   padding: 0.5em;
   grid-template-areas: "viewport viewBox"
@@ -33,12 +33,22 @@ export const ControlPanel=styled.div`
 `;
 
 export const ControlPanelSection=styled.div`
+  padding: 0.5em;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: hsla(0, 0%, 0%, 0.2);
 `;
 
+export const ControlPanelPAR=styled(ControlPanelSection)`
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas: "title title"
+                       "par par"
+                       "x     y";
+`;
 
 export const DisplaySVG=styled.div`
   grid-area: display-svg;
