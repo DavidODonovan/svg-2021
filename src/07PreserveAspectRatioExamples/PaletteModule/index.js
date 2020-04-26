@@ -11,8 +11,23 @@ const PaletteModule=()=>{
   const[viewBoxHeight, setViewBoxHeight]=useState(100);
 
   const[preserveAspectRatio, setPreserveAspectRatio]=useState("xMidYMid meet");
-
+  const [parNone, setParNone]=useState(false);
+  const[parX, setParX]=useState('xMid');
+  const[parY, setParY]=useState('YMid');
   const[meetOrSlice, setMeetOrSlice]=useState("meet");
+
+  useEffect(()=>{
+    if(parNone){
+      setPreserveAspectRatio("none")
+    } else {
+      setPreserveAspectRatio(`${parX}${parY} ${meetOrSlice}`);
+    }
+
+  },[parNone,parX,parY,meetOrSlice])
+
+
+
+
 
   const changeViewPortWidth=(e)=>{
     setViewPortWidth(e.target.value);
@@ -38,12 +53,23 @@ const PaletteModule=()=>{
     setViewBoxHeight(e.target.value);
   };
 
+  const changeParX=(e)=>{
+    setParX(e.target.value);
+  };
+
+  const changeParY=(e)=>{
+    setParY(e.target.value);
+  };
+
   const changeMeetOrSlice=(e)=>{
     setMeetOrSlice(e.target.value);
   };
 
-  return (
+  const changeParNone=()=>{
+    setParNone(!parNone);
+  };
 
+  return (
     <GridItem>
       <ControlPanel>
         <ControlPanelSection style={{gridArea: "viewport"}}>
@@ -69,7 +95,7 @@ const PaletteModule=()=>{
               <option value={200}>200</option>
               </select>
             </div>
-</ControlPanelSection>
+        </ControlPanelSection>
         </ControlPanelSection>
 
         <ControlPanelSection style={{gridArea: "viewBox"}}>
@@ -135,26 +161,34 @@ const PaletteModule=()=>{
 
         <ControlPanelPAR style={{gridArea: "par"}}>
 
-          <div style={{gridArea: "title"}}><strong>preserveAspectRatio</strong></div>
+          <div style={{gridArea: "title"}}>
+            <strong>preserveAspectRatio</strong>
+            <div>            set to "none":
+            <input type="checkbox" onChange={changeParNone} checked={parNone}/>
+            </div>
+          </div>
           <ControlPanelSection style={{gridArea: "par"}}>
             <div>
-              preserveAspectRatio="none"
-              <input type="checkbox" onChange={()=>{}} checked={true}/>
+              preserveAspectRatio="{`${preserveAspectRatio}`}"
             </div>
           </ControlPanelSection>
 
           <ControlPanelSection style={{gridArea: "x"}}>
             <strong>x</strong>
-            <div>xmin</div>
-            <div>xmid</div>
-            <div>xmax</div>
+            <select onChange={changeParX} value={parX}>
+              <option value="xMid">xMid</option>
+              <option value="xMin">xMin</option>
+              <option value="xMax">xMax</option>
+            </select>
           </ControlPanelSection>
 
           <ControlPanelSection style={{gridArea: "y"}}>
             <strong>y</strong>
-            <div>ymin</div>
-            <div>ymid</div>
-            <div>ymax</div>
+            <select onChange={changeParY} value={parY}>
+              <option value="YMid">YMid</option>
+              <option value="YMin">YMin</option>
+              <option value="YMax">YMax</option>
+            </select>
           </ControlPanelSection>
 
           <ControlPanelSection style={{gridArea: "meetOrSlice"}}>
