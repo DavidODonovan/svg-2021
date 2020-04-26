@@ -3,7 +3,7 @@ import { SVGWrapper, GridWrapper, BackLink } from './style';
 import PaletteModule from './PaletteModule';
 import { Link } from 'react-router-dom';
 
-const BlendingPalette=()=>{
+const PreserveAspectRatio=()=>{
   return (
     <div>
       <BackLink>
@@ -19,14 +19,4 @@ const BlendingPalette=()=>{
   )
 }
 
-export default BlendingPalette;
-//
-// <GridWrapper>
-//   <PaletteModule/>
-//   <PaletteModule/>
-//   <PaletteModule/>
-//   <PaletteModule/>
-//   <PaletteModule/>
-//   <PaletteModule/>
-// </GridWrapper>
-//
+export default PreserveAspectRatio;

@@ -9,16 +9,39 @@ export const GridItem=styled.div`
   padding: 0.5em;
 
   display: grid;
+  grid-gap: 0.5em;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "controls controls"
-                        "svg svg"
-                        "svg svg";
+                       "controls controls"
+                       "display-svg display-svg";
 `;
 
 
-export const SVGWrapper=styled.div`
-  grid-area: svg;
+export const ControlPanel=styled.div`
+  background-color: hsla(0, 0%, 0%, 0.2);
+
+  grid-area: controls;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0.5em;
+  padding: 0.5em;
+  grid-template-areas: "viewport viewBox"
+                       "par par"
+`;
+
+export const ControlPanelSection=styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: hsla(0, 0%, 0%, 0.2);
+`;
+
+
+export const DisplaySVG=styled.div`
+  grid-area: display-svg;
   display: flex;
   justify-content: center;
   align-items: center;
