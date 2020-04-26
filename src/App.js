@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import {  GlobalNormalizeCSS, GlobalResetCSS, GlobalTypographyCSS, GlobalWebkitScrolling } from './globalStyles';
+import AppWrapper from './AppWrapper';
 import Nav from './00Nav';
 import SVGBasicStyling from './01SVGBasicStyling';
 import ViewPORT from './02ViewPORT';
@@ -26,7 +27,6 @@ function App() {
         <Route path={`/viewBox-attribute`} component={ViewboxAttribute}/>
         <Route path={`/preserveAspectRatio-attribute`} component={PreserveAspectRatio}/>
         <Route path={`/preserveAspectRatio-examples`} component={PreserveAspectRatioExamples}/>
-
       </Router>
     </div>
   );

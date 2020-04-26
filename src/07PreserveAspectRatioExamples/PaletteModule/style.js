@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const GridItem=styled.div`
-  border: 2px solid red;
   font-size: 0.7em;
-  background-color: hsla(0, 0%, 90%, 1);
+  background-color: hsla(0, 0%, 0%, 0.4);
+  color: #fff;
   margin: 5px;
   border-radius: 5px;
   padding: 0.5em;
@@ -30,7 +30,7 @@ export const ControlPanel=styled.div`
   grid-gap: 0.5em;
   padding: 0.5em;
   grid-template-areas: "viewport viewBox"
-                       "par par"
+                       "par par";
 `;
 
 export const ControlPanelSection=styled.div`

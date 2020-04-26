@@ -19,6 +19,6 @@ export const BackLink=styled.div`
   top: 0;
   right: 0;
   left:0;
-  background: #fff;
+  background: hsla(0, 0%, 80%, 0.8);
   border-bottom: 2px solid hsla(0, 0%, 40%, 0.8);
 `;
