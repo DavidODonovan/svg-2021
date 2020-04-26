@@ -11,7 +11,7 @@ export const GridItem=styled.div`
   display: grid;
   grid-gap: 0.5em;
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(100px, 1fr) minmax(100px, 1fr) 1fr;
+  grid-template-rows: auto auto 1fr;
   grid-template-areas: "controls controls"
                        "controls controls"
                        "display-svg display-svg";
@@ -20,6 +20,7 @@ export const GridItem=styled.div`
 
 export const ControlPanel=styled.div`
   background-color: hsla(0, 0%, 0%, 0.2);
+  transition: all .3s ease-in;
 
   grid-area: controls;
 

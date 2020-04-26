@@ -21,6 +21,22 @@ const PaletteModule=()=>{
     setViewPortHeight(e.target.value);
   };
 
+  const changeViewBoxX=(e)=>{
+    setViewBoxX(e.target.value);
+  };
+
+  const changeViewBoxY=(e)=>{
+    setViewBoxY(e.target.value);
+  };
+
+  const changeViewBoxWidth=(e)=>{
+    setViewBoxWidth(e.target.value);
+  };
+
+  const changeViewBoxHeight=(e)=>{
+    setViewBoxHeight(e.target.value);  
+  };
+
   const changeMeetOrSlice=(e)=>{
     setMeetOrSlice(e.target.value);
   };
@@ -52,10 +68,55 @@ const PaletteModule=()=>{
 
         <ControlPanelSection style={{gridArea: "viewBox"}}>
           <strong>viewBox</strong>
-          <div>viewBox x</div>
-          <div>viewBox y</div>
-          <div>viewBox width</div>
-          <div>viewBox height</div>
+
+          <div>viewBox x
+            <select onChange={changeViewBoxX} value={viewBoxX}>
+            <option value={0}>0</option>
+            <option value={10}>10</option>
+            <option value={20}>20</option>
+            <option value={30}>30</option>
+            <option value={40}>40</option>
+            <option value={50}>50</option>
+            </select>
+          </div>
+
+
+          <div>viewBox y
+            <select onChange={changeViewBoxY} value={viewBoxY}>
+            <option value={0}>0</option>
+            <option value={10}>10</option>
+            <option value={20}>20</option>
+            <option value={30}>30</option>
+            <option value={40}>40</option>
+            <option value={50}>50</option>
+            </select>
+          </div>
+
+
+          <div>viewBox width
+            <select onChange={changeViewBoxWidth} value={viewBoxWidth}>
+            <option value={100}>100</option>
+            <option value={150}>150</option>
+            <option value={200}>200</option>
+            <option value={250}>250</option>
+            <option value={300}>300</option>
+            <option value={350}>350</option>
+            <option value={400}>400</option>
+            </select>
+          </div>
+
+          <div>viewBox height
+            <select onChange={changeViewBoxHeight} value={viewBoxHeight}>
+            <option value={100}>100</option>
+            <option value={150}>150</option>
+            <option value={200}>200</option>
+            <option value={250}>250</option>
+            <option value={300}>300</option>
+            <option value={350}>350</option>
+            <option value={400}>400</option>
+            </select>
+          </div>
+
         </ControlPanelSection>
 
         <ControlPanelPAR style={{gridArea: "par"}}>
