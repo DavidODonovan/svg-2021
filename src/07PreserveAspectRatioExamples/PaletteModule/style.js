@@ -66,6 +66,7 @@ export const DisplaySVG=styled.div`
     stroke-linejoin: round;
     pointer-events: none;
 
+    transition: all .3s ease-in;
     width: ${({width})=>width ? `${width}px`: null};
     height: ${({height})=>height ? `${height}px`: null};
   }
