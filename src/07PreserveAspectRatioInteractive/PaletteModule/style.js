@@ -59,7 +59,7 @@ export const ControlPanelSection=styled.div`
 	font-weight: 700;
 	color: #444;
 	line-height: 1.3;
-	padding: .6em 1.4em .5em .8em;
+	padding: 0.2em .4em .2em .8em;
 	width: 100%;
 	max-width: 100%;
 	box-sizing: border-box;

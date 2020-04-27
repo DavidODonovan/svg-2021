@@ -230,8 +230,8 @@ const PaletteModule=()=>{
             <ControlPanelSection >
               <strong>x</strong>
               <select onChange={changeParX} value={parX}>
-                <option value="xMid">xMid</option>
                 <option value="xMin">xMin</option>
+                <option value="xMid">xMid</option>
                 <option value="xMax">xMax</option>
               </select>
             </ControlPanelSection>
@@ -239,8 +239,8 @@ const PaletteModule=()=>{
             <ControlPanelSection >
               <strong>y</strong>
               <select onChange={changeParY} value={parY}>
-                <option value="YMid">YMid</option>
                 <option value="YMin">YMin</option>
+                <option value="YMid">YMid</option>
                 <option value="YMax">YMax</option>
               </select>
             </ControlPanelSection>
@@ -269,6 +269,7 @@ const PaletteModule=()=>{
         <svg
           width={viewPortWidth}
           height={viewPortHeight}
+          style={{border: "3px solid black"}}
           viewBox={`${viewBoxX} ${viewBoxY} ${viewBoxWidth} ${viewBoxHeight}`}
           preserveAspectRatio={preserveAspectRatio}
           >
