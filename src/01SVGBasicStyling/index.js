@@ -14,7 +14,6 @@ const BasicStyling=()=>{
       <strong>01 svg styling basics</strong>
       <hr/>
       <div>
-        See style.js to look at styling for stroke-linecap etcetera.
         <SVGWrapper>
           <Smiley/>
         </SVGWrapper>
@@ -45,8 +44,12 @@ const BasicStyling=()=>{
         </SVGWrapper>
             </div>
         <br/>
-        <hr/>
       </div>
+      <hr/>
+      note: See style.js to look at styling for stroke-linecap etcetera.
+
+      <hr/>
+      <br/>
     </div>
   );
 };
