@@ -18,6 +18,16 @@ export const GridItem=styled.div`
 
 `;
 
+export const Button=styled.button`
+  background-color: hsla(0, 0%, 0%, 0.2);
+  border: 1px solid hsla(0, 0%, 0%, 0.4);
+  border-radius: 3px;
+  padding: 0.2em;
+  margin: 0.2em;
+  &:hover {
+    background-color: hsla(0, 0%, 0%, 0.4);
+  }
+`;
 
 export const ControlPanel=styled.div`
   background-color: hsla(0, 0%, 0%, 0.2);
@@ -56,7 +66,7 @@ export const ControlPanelPAR=styled(ControlPanelSection)`
 export const DisplaySVG=styled.div`
   grid-area: display-svg;
   display: flex;
-  
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: hsla(0, 0%, 0%, 0.2);

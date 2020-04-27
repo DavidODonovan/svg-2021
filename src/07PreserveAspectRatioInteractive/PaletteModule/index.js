@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import { GridItem, ControlPanel, ControlPanelSection, ControlPanelPAR, DisplaySVG } from './style';
+import { GridItem, Button, ControlPanel, ControlPanelSection, ControlPanelPAR, DisplaySVG } from './style';
 
 const PaletteModule=()=>{
-  const[viewPortWidth, setViewPortWidth]=useState(100);
-  const[viewPortHeight, setViewPortHeight]=useState(100);
+  const [shapeSelection, setShapeSelection]=useState("smiley");
+  const [viewPortWidth, setViewPortWidth]=useState(100);
+  const [viewPortHeight, setViewPortHeight]=useState(100);
 
-  const[viewBoxX, setViewBoxX]=useState(0);
-  const[viewBoxY, setViewBoxY]=useState(0);
-  const[viewBoxWidth, setViewBoxWidth]=useState(100);
-  const[viewBoxHeight, setViewBoxHeight]=useState(100);
+  const [viewBoxX, setViewBoxX]=useState(0);
+  const [viewBoxY, setViewBoxY]=useState(0);
+  const [viewBoxWidth, setViewBoxWidth]=useState(100);
+  const [viewBoxHeight, setViewBoxHeight]=useState(100);
 
-  const[preserveAspectRatio, setPreserveAspectRatio]=useState("xMidYMid meet");
+  const [preserveAspectRatio, setPreserveAspectRatio]=useState("xMidYMid meet");
   const [parNone, setParNone]=useState(false);
-  const[parX, setParX]=useState('xMid');
-  const[parY, setParY]=useState('YMid');
-  const[meetOrSlice, setMeetOrSlice]=useState("meet");
+  const [parX, setParX]=useState('xMid');
+  const [parY, setParY]=useState('YMid');
+  const [meetOrSlice, setMeetOrSlice]=useState("meet");
 
   useEffect(()=>{
     if(parNone){
@@ -263,8 +264,12 @@ const PaletteModule=()=>{
       </ControlPanel>
 
       <DisplaySVG >
-        <div>{shapes.wideTriangle}</div>
-        <div>lkajd</div>
+        <div>
+          <Button onClick={()=>setShapeSelection("smiley")}>smiley</Button>
+          <Button onClick={()=>setShapeSelection("tallTriangle")}>tallTriangle</Button>
+          <Button onClick={()=>setShapeSelection("wideTriangle")}>wideTriangle</Button>
+        </div>
+        <div>{shapes[shapeSelection]}</div>
       </DisplaySVG>
     </GridItem>
   );
