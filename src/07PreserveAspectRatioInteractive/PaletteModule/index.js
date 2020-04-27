@@ -69,19 +69,31 @@ const PaletteModule=()=>{
   const shapes={
     smiley: (
           <>
-            <path d="M50,10 A40,40,1,1,1,50,90 A40,40,1,1,1,50,10 M30,40 Q36,35,42,40 M58,40 Q64,35,70,40 M30,60 Q50,75,70,60 Q50,75,30,60"></path>
+            <path
+              d="M50,10 A40,40,1,1,1,50,90
+                 A40,40,1,1,1,50,10
+                 M30,40 Q36,35,42,40
+                 M58,40 Q64,35,70,40
+                 M30,60
+                 Q50,75,70,60
+                 Q50,75,30,60"></path>
           </>
     ),
     tallTriangle: (
           <>
             <polygon
-              points="32.5 0 65 187 0 187"></polygon>
+              points="50 0
+                      100 200
+                      0 200"></polygon>
           </>
     ),
 
       wideTriangle: (
           <>
-            <polygon id="Triangle-Copy" fill="#D8D8D8" fill-rule="nonzero" points="99.5 0 199 55 0 55"></polygon>
+            <polygon
+              points="100 0
+                      200 50
+                      0 50"></polygon>
           </>
     )
   };
@@ -199,10 +211,12 @@ const PaletteModule=()=>{
         <ControlPanelPAR style={{gridArea: "par"}}>
 
           <div style={{gridArea: "title"}}>
-            <strong>preserveAspectRatio</strong> -- (fit viewBox <em>inside</em> viewport)
+            <strong>preserveAspectRatio</strong> --FIT VIEWBOX <em>INSIDE</em> VIEWPORT
             <div>            set to "none":
             <input type="checkbox" onChange={changeParNone} checked={parNone}/>
-            --stretches the <em>viewBox</em> to fit the view<em>port</em>
+            </div>
+            <div>
+              if set to "none", <em>viewBox</em> is stretched & compressed so it all fits into the view<em>port</em>
             </div>
           </div>
           <ControlPanelSection style={{gridArea: "par", border: "1px solid red"}}>
@@ -237,7 +251,7 @@ const PaletteModule=()=>{
                 <option value={"meet"}>meet</option>
                 <option value={"slice"}>slice</option>
               </select>
-              -- crop or no-crop.
+              -- CROP OR NO-CROP.
             </div>
           </ControlPanelSection>
 
