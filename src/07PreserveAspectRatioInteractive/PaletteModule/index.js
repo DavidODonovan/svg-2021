@@ -25,10 +25,6 @@ const PaletteModule=()=>{
 
   },[parNone,parX,parY,meetOrSlice])
 
-
-
-
-
   const changeViewPortWidth=(e)=>{
     setViewPortWidth(e.target.value);
   };
@@ -69,6 +65,44 @@ const PaletteModule=()=>{
     setParNone(!parNone);
   };
 
+  const shapes={
+    smiley: (
+          <svg
+            width={viewPortWidth}
+            height={viewPortHeight}
+            viewBox={`${viewBoxX} ${viewBoxY} ${viewBoxWidth} ${viewBoxHeight}`}
+            preserveAspectRatio={preserveAspectRatio}
+            >
+            <path d="M50,10 A40,40,1,1,1,50,90 A40,40,1,1,1,50,10 M30,40 Q36,35,42,40 M58,40 Q64,35,70,40 M30,60 Q50,75,70,60 Q50,75,30,60"></path>
+            <rect x={viewBoxX} y={viewBoxY} width={viewBoxWidth} height={viewBoxHeight} fill="none" stroke="red" strokeWidth="4"></rect>
+          </svg>
+    ),
+    tallTriangle: (
+          <svg
+            width={viewPortWidth}
+            height={viewPortHeight}
+            viewBox={`${viewBoxX} ${viewBoxY} ${viewBoxWidth} ${viewBoxHeight}`}
+            preserveAspectRatio={preserveAspectRatio}
+            >
+            <polygon
+              points="32.5 0 65 187 0 187"></polygon>
+            <rect x={viewBoxX} y={viewBoxY} width={viewBoxWidth} height={viewBoxHeight} fill="none" stroke="red" strokeWidth="4"></rect>
+          </svg>
+    ),
+
+      wideTriangle: (
+          <svg
+            width={viewPortWidth}
+            height={viewPortHeight}
+            viewBox={`${viewBoxX} ${viewBoxY} ${viewBoxWidth} ${viewBoxHeight}`}
+            preserveAspectRatio={preserveAspectRatio}
+            >
+            <polygon id="Triangle-Copy" fill="#D8D8D8" fill-rule="nonzero" points="99.5 0 199 55 0 55"></polygon>
+            <rect x={viewBoxX} y={viewBoxY} width={viewBoxWidth} height={viewBoxHeight} fill="none" stroke="red" strokeWidth="4"></rect>
+        </svg>
+    )
+  };
+
   return (
     <GridItem>
       <ControlPanel>
@@ -85,6 +119,8 @@ const PaletteModule=()=>{
               <option value={100}>100</option>
               <option value={150}>150</option>
               <option value={200}>200</option>
+              <option value={250}>250</option>
+              <option value={300}>300</option>
               </select>
             </div>
 
@@ -93,6 +129,8 @@ const PaletteModule=()=>{
               <option value={100}>100</option>
               <option value={150}>150</option>
               <option value={200}>200</option>
+              <option value={250}>250</option>
+              <option value={300}>300</option>
               </select>
             </div>
         </ControlPanelSection>
@@ -145,6 +183,9 @@ const PaletteModule=()=>{
 
             <div>viewBox width
               <select onChange={changeViewBoxWidth} value={viewBoxWidth}>
+              <option value={0}>0</option>
+              <option value={25}>25</option>
+              <option value={50}>50</option>
               <option value={100}>100</option>
               <option value={150}>150</option>
               <option value={200}>200</option>
@@ -157,6 +198,9 @@ const PaletteModule=()=>{
 
             <div>viewBox height
               <select onChange={changeViewBoxHeight} value={viewBoxHeight}>
+              <option value={0}>0</option>
+              <option value={25}>25</option>
+              <option value={50}>50</option>
               <option value={100}>100</option>
               <option value={150}>150</option>
               <option value={200}>200</option>
@@ -172,7 +216,7 @@ const PaletteModule=()=>{
         <ControlPanelPAR style={{gridArea: "par"}}>
 
           <div style={{gridArea: "title"}}>
-            <strong>preserveAspectRatio</strong>
+            <strong>preserveAspectRatio</strong> -- (fit viewBox <em>inside</em> viewport)
             <div>            set to "none":
             <input type="checkbox" onChange={changeParNone} checked={parNone}/>
             --stretches the <em>viewBox</em> to fit the view<em>port</em>
@@ -184,22 +228,24 @@ const PaletteModule=()=>{
             </div>
           </ControlPanelSection>
 
-          <ControlPanelSection style={{gridArea: "x"}}>
-            <strong>x</strong>
-            <select onChange={changeParX} value={parX}>
-              <option value="xMid">xMid</option>
-              <option value="xMin">xMin</option>
-              <option value="xMax">xMax</option>
-            </select>
-          </ControlPanelSection>
+          <ControlPanelSection style={{gridArea: "xy" , flexDirection: "row"}}>
+            <ControlPanelSection >
+              <strong>x</strong>
+              <select onChange={changeParX} value={parX}>
+                <option value="xMid">xMid</option>
+                <option value="xMin">xMin</option>
+                <option value="xMax">xMax</option>
+              </select>
+            </ControlPanelSection>
 
-          <ControlPanelSection style={{gridArea: "y"}}>
-            <strong>y</strong>
-            <select onChange={changeParY} value={parY}>
-              <option value="YMid">YMid</option>
-              <option value="YMin">YMin</option>
-              <option value="YMax">YMax</option>
-            </select>
+            <ControlPanelSection >
+              <strong>y</strong>
+              <select onChange={changeParY} value={parY}>
+                <option value="YMid">YMid</option>
+                <option value="YMin">YMin</option>
+                <option value="YMax">YMax</option>
+              </select>
+            </ControlPanelSection>
           </ControlPanelSection>
 
           <ControlPanelSection style={{gridArea: "meetOrSlice"}}>
@@ -208,6 +254,7 @@ const PaletteModule=()=>{
                 <option value={"meet"}>meet</option>
                 <option value={"slice"}>slice</option>
               </select>
+              -- crop or no-crop.
             </div>
           </ControlPanelSection>
 
@@ -216,16 +263,8 @@ const PaletteModule=()=>{
       </ControlPanel>
 
       <DisplaySVG >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width={viewPortWidth}
-          height={viewPortHeight}
-          viewBox={`${viewBoxX} ${viewBoxY} ${viewBoxWidth} ${viewBoxHeight}`}
-          preserveAspectRatio={preserveAspectRatio}
-          >
-          <path d="M50,10 A40,40,1,1,1,50,90 A40,40,1,1,1,50,10 M30,40 Q36,35,42,40 M58,40 Q64,35,70,40 M30,60 Q50,75,70,60 Q50,75,30,60"></path>
-          <rect x={viewBoxX} y={viewBoxY} width={viewBoxWidth} height={viewBoxHeight} fill="none" stroke="red" strokeWidth="4"></rect>
-        </svg>
+        <div>{shapes.wideTriangle}</div>
+        <div>lkajd</div>
       </DisplaySVG>
     </GridItem>
   );

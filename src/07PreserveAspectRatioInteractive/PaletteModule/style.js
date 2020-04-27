@@ -49,13 +49,14 @@ export const ControlPanelPAR=styled(ControlPanelSection)`
   grid-template-rows: auto auto 1fr auto;
   grid-template-areas: "title title"
                        "par par"
-                       "x     y"
+                       "xy    xy"
                        "meetOrSlice meetOrSlice";
 `;
 
 export const DisplaySVG=styled.div`
   grid-area: display-svg;
   display: flex;
+  
   justify-content: center;
   align-items: center;
   background-color: hsla(0, 0%, 0%, 0.2);
