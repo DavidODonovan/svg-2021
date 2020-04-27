@@ -11,10 +11,11 @@ export const GridItem=styled.div`
   display: grid;
   grid-gap: 0.5em;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto 1fr;
-  grid-template-areas: "controls controls"
+  grid-template-rows: 1fr auto auto;
+  grid-template-areas: "display-svg display-svg"
                        "controls controls"
-                       "display-svg display-svg";
+                       "controls controls";
+
 `;
 
 

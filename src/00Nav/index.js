@@ -31,7 +31,7 @@ const NavMenu=()=>{
         </li>
 
         <li>
-          <MyLink to={`/preserveAspectRatio-examples`}>07 preserveAspectRatio examples</MyLink>
+          <MyLink to={`/preserveAspectRatio-interactive`}>07 interactive preserveAspectRatio </MyLink>
         </li>
 
       </NavBox>

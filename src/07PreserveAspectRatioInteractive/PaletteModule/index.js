@@ -73,7 +73,7 @@ const PaletteModule=()=>{
     <GridItem>
       <ControlPanel>
         <ControlPanelSection style={{gridArea: "viewport"}}>
-          <strong>viewport</strong>
+          <strong>view<em>port</em></strong>
 
             <ControlPanelSection style={{marginBottom: "0.5em"}}>
             <div>{`<svg width="${viewPortWidth}" height="${viewPortHeight}"`}</div>
