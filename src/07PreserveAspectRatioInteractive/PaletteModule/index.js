@@ -75,7 +75,7 @@ const PaletteModule=()=>{
         <ControlPanelSection style={{gridArea: "viewport"}}>
           <strong>view<em>port</em></strong>
 
-            <ControlPanelSection style={{marginBottom: "0.5em"}}>
+            <ControlPanelSection style={{marginBottom: "0.5em", border: "1px solid red"}}>
             <div>{`<svg width="${viewPortWidth}" height="${viewPortHeight}"`}</div>
             </ControlPanelSection>
 
@@ -101,7 +101,7 @@ const PaletteModule=()=>{
         <ControlPanelSection style={{gridArea: "viewBox"}}>
           <strong>viewBox</strong>
 
-          <ControlPanelSection>
+          <ControlPanelSection style={{border: "1px solid red"}}>
           <div>{`viewBox="${viewBoxX} ${viewBoxY} ${viewBoxWidth} ${viewBoxHeight}"`}</div>
 
           </ControlPanelSection>
@@ -109,7 +109,7 @@ const PaletteModule=()=>{
 
           <ControlPanelSection>
 
-            <div>viewBox x
+            <div>viewBox x origin:
               <select onChange={changeViewBoxX} value={viewBoxX}>
               <option value={-50}>-50</option>
               <option value={-40}>-40</option>
@@ -126,7 +126,7 @@ const PaletteModule=()=>{
             </div>
 
 
-            <div>viewBox y
+            <div>viewBox y origin:
               <select onChange={changeViewBoxY} value={viewBoxY}>
               <option value={-50}>-50</option>
               <option value={-40}>-40</option>
@@ -175,9 +175,10 @@ const PaletteModule=()=>{
             <strong>preserveAspectRatio</strong>
             <div>            set to "none":
             <input type="checkbox" onChange={changeParNone} checked={parNone}/>
+            --stretches the <em>viewBox</em> to fit the view<em>port</em>
             </div>
           </div>
-          <ControlPanelSection style={{gridArea: "par"}}>
+          <ControlPanelSection style={{gridArea: "par", border: "1px solid red"}}>
             <div>
               preserveAspectRatio="{`${preserveAspectRatio}`}"
             </div>
@@ -223,6 +224,7 @@ const PaletteModule=()=>{
           preserveAspectRatio={preserveAspectRatio}
           >
           <path d="M50,10 A40,40,1,1,1,50,90 A40,40,1,1,1,50,10 M30,40 Q36,35,42,40 M58,40 Q64,35,70,40 M30,60 Q50,75,70,60 Q50,75,30,60"></path>
+          <rect x={viewBoxX} y={viewBoxY} width={viewBoxWidth} height={viewBoxHeight} fill="none" stroke="red" strokeWidth="4"></rect>
         </svg>
       </DisplaySVG>
     </GridItem>
