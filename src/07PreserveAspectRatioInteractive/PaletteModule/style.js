@@ -52,7 +52,7 @@ export const ControlPanelSection=styled.div`
   background-color: hsla(0, 0%, 0%, 0.2);
 
 
-  & .select {
+  & select {
 	display: block;
 	font-size: 16px;
 	font-family: sans-serif;
@@ -75,6 +75,7 @@ export const ControlPanelSection=styled.div`
 	background-repeat: no-repeat, repeat;
 	background-position: right .7em top 50%, 0 0;
 	background-size: .65em auto, 100%;
+  opacity: 0.1;
 }
 .select-css::-ms-expand {
 	display: none;

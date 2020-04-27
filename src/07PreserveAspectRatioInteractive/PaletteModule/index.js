@@ -111,22 +111,22 @@ const PaletteModule=()=>{
             <ControlPanelSection>
             <div>viewport width
               <select
-              className="select" onChange={changeViewPortWidth} value={viewPortWidth}>
-              <option value={100}>100</option>
-              <option value={150}>150</option>
-              <option value={200}>200</option>
-              <option value={250}>250</option>
-              <option value={300}>300</option>
+               onChange={changeViewPortWidth} value={viewPortWidth}>
+                <option value={100}>100</option>
+                <option value={150}>150</option>
+                <option value={200}>200</option>
+                <option value={250}>250</option>
+                <option value={300}>300</option>
               </select>
             </div>
 
             <div>viewport height
               <select onChange={changeViewPortHeight} value={viewPortHeight}>
-              <option value={100}>100</option>
-              <option value={150}>150</option>
-              <option value={200}>200</option>
-              <option value={250}>250</option>
-              <option value={300}>300</option>
+                <option value={100}>100</option>
+                <option value={150}>150</option>
+                <option value={200}>200</option>
+                <option value={250}>250</option>
+                <option value={300}>300</option>
               </select>
             </div>
         </ControlPanelSection>
@@ -145,65 +145,65 @@ const PaletteModule=()=>{
 
             <div>viewBox x origin:
               <select onChange={changeViewBoxX} value={viewBoxX}>
-              <option value={-50}>-50</option>
-              <option value={-40}>-40</option>
-              <option value={-30}>-30</option>
-              <option value={-20}>-20</option>
-              <option value={-10}>-10</option>
-              <option value={0}>0</option>
-              <option value={10}>10</option>
-              <option value={20}>20</option>
-              <option value={30}>30</option>
-              <option value={40}>40</option>
-              <option value={50}>50</option>
+                <option value={-50}>-50</option>
+                <option value={-40}>-40</option>
+                <option value={-30}>-30</option>
+                <option value={-20}>-20</option>
+                <option value={-10}>-10</option>
+                <option value={0}>0</option>
+                <option value={10}>10</option>
+                <option value={20}>20</option>
+                <option value={30}>30</option>
+                <option value={40}>40</option>
+                <option value={50}>50</option>
               </select>
             </div>
 
 
             <div>viewBox y origin:
               <select onChange={changeViewBoxY} value={viewBoxY}>
-              <option value={-50}>-50</option>
-              <option value={-40}>-40</option>
-              <option value={-30}>-30</option>
-              <option value={-20}>-20</option>
-              <option value={-10}>-10</option>
-              <option value={0}>0</option>
-              <option value={10}>10</option>
-              <option value={20}>20</option>
-              <option value={30}>30</option>
-              <option value={40}>40</option>
-              <option value={50}>50</option>
+                <option value={-50}>-50</option>
+                <option value={-40}>-40</option>
+                <option value={-30}>-30</option>
+                <option value={-20}>-20</option>
+                <option value={-10}>-10</option>
+                <option value={0}>0</option>
+                <option value={10}>10</option>
+                <option value={20}>20</option>
+                <option value={30}>30</option>
+                <option value={40}>40</option>
+                <option value={50}>50</option>
               </select>
             </div>
 
 
             <div>viewBox width
               <select onChange={changeViewBoxWidth} value={viewBoxWidth}>
-              <option value={0}>0</option>
-              <option value={25}>25</option>
-              <option value={50}>50</option>
-              <option value={100}>100</option>
-              <option value={150}>150</option>
-              <option value={200}>200</option>
-              <option value={250}>250</option>
-              <option value={300}>300</option>
-              <option value={350}>350</option>
-              <option value={400}>400</option>
+                <option value={0}>0</option>
+                <option value={25}>25</option>
+                <option value={50}>50</option>
+                <option value={100}>100</option>
+                <option value={150}>150</option>
+                <option value={200}>200</option>
+                <option value={250}>250</option>
+                <option value={300}>300</option>
+                <option value={350}>350</option>
+                <option value={400}>400</option>
               </select>
             </div>
 
             <div>viewBox height
               <select onChange={changeViewBoxHeight} value={viewBoxHeight}>
-              <option value={0}>0</option>
-              <option value={25}>25</option>
-              <option value={50}>50</option>
-              <option value={100}>100</option>
-              <option value={150}>150</option>
-              <option value={200}>200</option>
-              <option value={250}>250</option>
-              <option value={300}>300</option>
-              <option value={350}>350</option>
-              <option value={400}>400</option>
+                <option value={0}>0</option>
+                <option value={25}>25</option>
+                <option value={50}>50</option>
+                <option value={100}>100</option>
+                <option value={150}>150</option>
+                <option value={200}>200</option>
+                <option value={250}>250</option>
+                <option value={300}>300</option>
+                <option value={350}>350</option>
+                <option value={400}>400</option>
               </select>
             </div>
           </ControlPanelSection>
