@@ -110,7 +110,8 @@ const PaletteModule=()=>{
 
             <ControlPanelSection>
             <div>viewport width
-              <select onChange={changeViewPortWidth} value={viewPortWidth}>
+              <select
+              className="select" onChange={changeViewPortWidth} value={viewPortWidth}>
               <option value={100}>100</option>
               <option value={150}>150</option>
               <option value={200}>200</option>
