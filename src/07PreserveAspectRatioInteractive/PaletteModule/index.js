@@ -68,39 +68,21 @@ const PaletteModule=()=>{
 
   const shapes={
     smiley: (
-          <svg
-            width={viewPortWidth}
-            height={viewPortHeight}
-            viewBox={`${viewBoxX} ${viewBoxY} ${viewBoxWidth} ${viewBoxHeight}`}
-            preserveAspectRatio={preserveAspectRatio}
-            >
+          <>
             <path d="M50,10 A40,40,1,1,1,50,90 A40,40,1,1,1,50,10 M30,40 Q36,35,42,40 M58,40 Q64,35,70,40 M30,60 Q50,75,70,60 Q50,75,30,60"></path>
-            <rect x={viewBoxX} y={viewBoxY} width={viewBoxWidth} height={viewBoxHeight} fill="none" stroke="red" strokeWidth="4"></rect>
-          </svg>
+          </>
     ),
     tallTriangle: (
-          <svg
-            width={viewPortWidth}
-            height={viewPortHeight}
-            viewBox={`${viewBoxX} ${viewBoxY} ${viewBoxWidth} ${viewBoxHeight}`}
-            preserveAspectRatio={preserveAspectRatio}
-            >
+          <>
             <polygon
               points="32.5 0 65 187 0 187"></polygon>
-            <rect x={viewBoxX} y={viewBoxY} width={viewBoxWidth} height={viewBoxHeight} fill="none" stroke="red" strokeWidth="4"></rect>
-          </svg>
+          </>
     ),
 
       wideTriangle: (
-          <svg
-            width={viewPortWidth}
-            height={viewPortHeight}
-            viewBox={`${viewBoxX} ${viewBoxY} ${viewBoxWidth} ${viewBoxHeight}`}
-            preserveAspectRatio={preserveAspectRatio}
-            >
+          <>
             <polygon id="Triangle-Copy" fill="#D8D8D8" fill-rule="nonzero" points="99.5 0 199 55 0 55"></polygon>
-            <rect x={viewBoxX} y={viewBoxY} width={viewBoxWidth} height={viewBoxHeight} fill="none" stroke="red" strokeWidth="4"></rect>
-        </svg>
+          </>
     )
   };
 
@@ -269,7 +251,15 @@ const PaletteModule=()=>{
           <Button onClick={()=>setShapeSelection("tallTriangle")}>tallTriangle</Button>
           <Button onClick={()=>setShapeSelection("wideTriangle")}>wideTriangle</Button>
         </div>
-        <div>{shapes[shapeSelection]}</div>
+        <svg
+          width={viewPortWidth}
+          height={viewPortHeight}
+          viewBox={`${viewBoxX} ${viewBoxY} ${viewBoxWidth} ${viewBoxHeight}`}
+          preserveAspectRatio={preserveAspectRatio}
+          >
+          {shapes[shapeSelection]}
+          <rect x={viewBoxX} y={viewBoxY} width={viewBoxWidth} height={viewBoxHeight} fill="none" stroke="red" strokeWidth="4"></rect>
+        </svg>
       </DisplaySVG>
     </GridItem>
   );
