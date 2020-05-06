@@ -10,6 +10,8 @@ import UserCoordinateSystem from './04UserCoordinateSystem';
 import ViewboxAttribute from './05ViewboxAttribute';
 import PreserveAspectRatio from './06PreserveAspectRatio';
 import PreserveAspectRatioInteractive from './07PreserveAspectRatioInteractive';
+import WimCrouwelSidewaysFontPlay from './08WimCrouwelSidewaysFontPlay';
+import ThreeRedFeathers from './09ThreeRedFeathers';
 
 function App() {
   return (
@@ -27,6 +29,9 @@ function App() {
         <Route path={`/viewBox-attribute`} component={ViewboxAttribute}/>
         <Route path={`/preserveAspectRatio-attribute`} component={PreserveAspectRatio}/>
         <Route path={`/preserveAspectRatio-interactive`} component={PreserveAspectRatioInteractive}/>
+        <Route path={`/wim-crouwel-sideways-font-play`} component={WimCrouwelSidewaysFontPlay}/>
+        <Route path={`/three-red-feathers`} component={ThreeRedFeathers}/>
+
       </Router>
     </div>
   );

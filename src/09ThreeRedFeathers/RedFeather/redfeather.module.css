@@ -1,0 +1,36 @@
+
+.container {
+  background-color: hsla(45, 40%, 95%, 1);
+  border: 5px solid gold;
+  display: grid;
+  height: 100vh;
+  align-content: start;
+}
+
+.texta {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.redfeather {
+  grid-area: 1 / 1 / 2 / 2;
+  width: 100%;
+}
+
+.redFeather g path {
+  fill: red;
+  background-color: blue
+}
+
+.fixed {
+  width: 300px;
+}
+
+.fluid {
+  width: 100%;
+}
+
+.fitted {
+  /* width: 100%; */
+  height: 100%;
+  object-fit: cover;
+}

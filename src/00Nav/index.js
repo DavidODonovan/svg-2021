@@ -34,6 +34,14 @@ const NavMenu=()=>{
           <MyLink to={`/preserveAspectRatio-interactive`}>07 interactive preserveAspectRatio </MyLink>
         </li>
 
+        <li>
+          <MyLink to={`/wim-crouwel-sideways-font-play`}>08 wim crouwel sideways font play</MyLink>
+        </li>
+
+        <li>
+          <MyLink to={`/three-red-feathers`}>09 three red feathers</MyLink>
+        </li>
+
       </NavBox>
     </nav>
   );
