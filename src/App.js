@@ -17,7 +17,7 @@ import FilterFlood from './components/12FilterFlood';
 import FilterGuassian from './components/13FilterGuassian';
 import FilterTurbulence from './components/14FilterTurbulence';
 import FilterColorMatrix from './components/15FilterColorMatrix';
-// import GradientLinear from './components/16GradientLinear';
+import GradientLinear from './components/16GradientLinear';
 // import GradientRadial from './components/17GradientRadial';
 
 
@@ -45,6 +45,8 @@ function App() {
         <Route path={`/13-filter-guassian`} component={FilterGuassian}/>
         <Route path={`/14-filter-turbulence`} component={FilterTurbulence}/>
         <Route path={`/15-filter-color-matrix`} component={FilterColorMatrix}/>
+        <Route path={`/16-gradient-linear`} component={GradientLinear}/>
+
 
       </Router>
     </div>
