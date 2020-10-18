@@ -1,18 +1,18 @@
 import React from 'react';
-import { D3Card } from '../../style';
+import { Provider } from 'contexts/ReactDims';
 import BlackAndWhiteCircles from './BlackAndWhiteCircles';
 import VertHot from './VertHot'
 
 const FeGaussianBlur=()=>{
   return (
-    <>
-      <D3Card>
+    <div style={{height: "100%", display: "grid", gridTemplateRows: "1fr 1fr"}}>
+      <Provider>
         <BlackAndWhiteCircles/>
-      </D3Card>
-      <D3Card>
+      </Provider>
+      <Provider>
         <VertHot/>
-      </D3Card>
-    </>
+      </Provider>
+    </div>
   );
 };
 

@@ -14,7 +14,7 @@ import AnimatingPaths from './components/09AnimatingPaths';
 import Clipping from './components/10Clipping';
 import Masking from './components/11Masking';
 import FilterFlood from './components/12FilterFlood';
-// import FilterGuassian from './components/13FilterGuassian';
+import FilterGuassian from './components/13FilterGuassian';
 // import FilterTurbulence from './components/14FilterTurbulence';
 // import FilterColorMatrix from './components/15FilterColorMatrix';
 // import GradientLinear from './components/16GradientLinear';
@@ -42,6 +42,7 @@ function App() {
         <Route path={`/10-clipping`} component={Clipping}/>
         <Route path={`/11-masking`} component={Masking}/>
         <Route path={`/12-filter-flood`} component={FilterFlood}/>
+        <Route path={`/13-filter-guassian`} component={FilterGuassian}/>
 
       </Router>
     </div>
