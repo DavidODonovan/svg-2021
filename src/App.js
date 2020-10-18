@@ -1,17 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import {  GlobalNormalizeCSS, GlobalResetCSS, GlobalTypographyCSS, GlobalWebkitScrolling } from './globalStyles';
-import AppWrapper from './AppWrapper';
-import Nav from './00Nav';
-import SVGBasicStyling from './01SVGBasicStyling';
-import ViewPORT from './02ViewPORT';
-import ViewPORTCoordinateSystem from './03ViewPORTCoordinateSystem';
-import UserCoordinateSystem from './04UserCoordinateSystem';
-import ViewboxAttribute from './05ViewboxAttribute';
-import PreserveAspectRatio from './06PreserveAspectRatio';
-import PreserveAspectRatioInteractive from './07PreserveAspectRatioInteractive';
-import WimCrouwelSidewaysFontPlay from './08WimCrouwelSidewaysFontPlay';
-import ThreeRedFeathers from './09ThreeRedFeathers';
+import Nav from './components/00Nav';
+import SVGBasicStyling from './components/01SVGBasicStyling';
+import ViewPORT from './components/02ViewPORT';
+import ViewPORTCoordinateSystem from './components/03ViewPORTCoordinateSystem';
+import UserCoordinateSystem from './components/04UserCoordinateSystem';
+import ViewboxAttribute from './components/05ViewboxAttribute';
+import PreserveAspectRatio from './components/06PreserveAspectRatio';
+import PreserveAspectRatioInteractive from './components/07PreserveAspectRatioInteractive';
+import ThreeRedFeathers from './components/08ThreeRedFeathers';
+import AnimatingPaths from './components/09AnimatingPaths';
 
 function App() {
   return (
@@ -29,8 +28,8 @@ function App() {
         <Route path={`/viewBox-attribute`} component={ViewboxAttribute}/>
         <Route path={`/preserveAspectRatio-attribute`} component={PreserveAspectRatio}/>
         <Route path={`/preserveAspectRatio-interactive`} component={PreserveAspectRatioInteractive}/>
-        <Route path={`/wim-crouwel-sideways-font-play`} component={WimCrouwelSidewaysFontPlay}/>
         <Route path={`/three-red-feathers`} component={ThreeRedFeathers}/>
+        <Route path={`/animating-paths`} component={AnimatingPaths}/>
 
       </Router>
     </div>

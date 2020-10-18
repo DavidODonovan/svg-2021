@@ -35,11 +35,11 @@ const NavMenu=()=>{
         </li>
 
         <li>
-          <MyLink to={`/wim-crouwel-sideways-font-play`}>08 wim crouwel sideways font play</MyLink>
+          <MyLink to={`/three-red-feathers`}>08 three red feathers</MyLink>
         </li>
 
         <li>
-          <MyLink to={`/three-red-feathers`}>09 three red feathers</MyLink>
+          <MyLink to="/animating-paths">09  Animating Paths (d3-interpolate)</MyLink>
         </li>
 
       </NavBox>
