@@ -42,6 +42,38 @@ const NavMenu=()=>{
           <MyLink to="/animating-paths">09  Animating Paths (d3-interpolate)</MyLink>
         </li>
 
+        <li>
+          <MyLink to="10-clipping">10 Clipping</MyLink>
+        </li>
+
+        <li>
+          <MyLink to="11-masking">11 Masking</MyLink>
+        </li>
+
+        <li>
+          <MyLink to="12-filter-flood">12 Filter: feFlood</MyLink>
+        </li>
+
+        <li>
+          <MyLink to="13-filter-guassian">15 Filter: feGuassian</MyLink>
+        </li>
+
+        <li>
+          <MyLink to="14-filter-turbulence">16 Filter: feTurbulence</MyLink>
+        </li>
+
+        <li>
+          <MyLink to="15-filter-color-matrix">15 Filter: feColorMatrix</MyLink>
+        </li>
+
+        <li>
+          <MyLink to="16-gradient-linear">16 Gradient:  Linear</MyLink>
+        </li>
+
+        <li>
+          <MyLink to="17-gradient-radial">17 Gradient: Radial</MyLink>
+        </li>
+
       </NavBox>
     </nav>
   );
