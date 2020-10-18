@@ -1,14 +1,14 @@
 import React from 'react';
-import { D3Card } from '../../style';
+import { Provider } from 'contexts/ReactDims';
 import SimpleTurbulence from './SimpleTurbulence';
 
 const FeTurbulence=()=>{
   return (
-    <>
-      <D3Card>
+    <div style={{height: "100%"}}>
+      <Provider>
         <SimpleTurbulence/>
-      </D3Card>
-    </>
+      </Provider>
+    </div>
   );
 };
 
