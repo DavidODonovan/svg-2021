@@ -1,14 +1,15 @@
 import React from 'react';
-import { D3Card } from '../../style';
-import RadialOne from './RadialOne';
+import { Provider } from 'contexts/ReactDims';
+import GradientRadialSimple from './GradientRadialSimple';
 
 const RadialGrad=()=>{
   return (
-    <>
-      <D3Card>
-        <RadialOne/>
-      </D3Card>
-    </>
+    <div style={{height: "100%", display: "grid", gridTemplateRows: "1fr 1fr"}}>
+      <Provider>
+        <GradientRadialSimple/>
+      </Provider>
+    </div>
+
   );
 };
 
