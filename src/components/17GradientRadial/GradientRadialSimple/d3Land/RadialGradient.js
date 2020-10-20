@@ -27,7 +27,6 @@ class RadialGradient {
         .attr("offset", "10%")
         .attr("stop-color", "hsla(0, 0%, 70%, 1)");
 
-
     myBackgroundGradient
       .append("stop")
         .attr("offset", "25%")
@@ -56,10 +55,7 @@ class RadialGradient {
 
     const circleGradient =
       this.defs.append('radialGradient')
-        .attr('id', 'radiantCircle')
-        .attr("cx", "50%")    //The x-center of the gradient
-        .attr("cy", "50%")    //The y-center of the gradient
-        .attr("r", "50%");   //The radius of the gradient
+        .attr('id', 'myRadialGradient')
 
     circleGradient.append("stop")
         .attr("offset", "0%")
@@ -75,10 +71,10 @@ class RadialGradient {
         .attr("stop-color", "#FB8933");
 
     this.svg.append("circle")
-      .attr("r", 40)
+      .attr("r", 140)
       .attr('cx', '50%')
       .attr('cy', '50%')
-      .style("fill", "url(#radiantCircle)")
+      .style("fill", "url(#myRadialGradient)")
   };
 
   createSpreadRadial=()=>{
@@ -88,11 +84,13 @@ class RadialGradient {
         .attr('fx', '20%')
         .attr('fy', '20%')
         .attr('spreadMethod', 'pad')
+
     myRadial4
       .append('stop')
         .attr('offset', '0%')
         .attr('stop-color', "#00ee00")
         .attr('stop-opacity', 1)
+
     myRadial4
       .append('stop')
         .attr('offset', '100%')
