@@ -12,12 +12,26 @@ class Squares {
 
   updateData=(newData)=>{
     this.data = newData;
+
     this.primordialChaos =
       this.svg.selectAll('.mySquare').data(this.data);
 
+    this.enter();
   };
 
   enter=()=>{
+    this.primordialChaos
+      .enter()
+        .append('rect')
+        .attr('class', 'mySquare')
+        .attr('x', (d,i)=>{
+          console.log(d)
+          return i*50
+        })
+        .attr('y', (this.dims.height/2))
+        .attr('width', 40)
+        .attr('height', 40)
+        .attr('fill', (d)=>this.scales.colourScale(d))
 
   };
 
