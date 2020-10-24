@@ -11,7 +11,7 @@ const ReactNode=({dims})=>{
 
   useEffect(()=>{
     createCanvas(()=>new ThePattern(domNode.current));
-    setData([10, 20, 30, 40, 50, 60]);
+    setData([10, 20, 30, 40, 50, 60, 70, 80, 90, 100]);
   }, []);
 
   useEffect(()=>{

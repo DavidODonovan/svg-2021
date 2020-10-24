@@ -1,6 +1,6 @@
 import { scaleLinear } from 'd3-scale';
 import { min, max, extent } from 'd3-array';
-import { interpolateHcl } from 'd3-interpolate';
+import { interpolateHcl, interpolateHsl  } from 'd3-interpolate';
 
 class Scales {
   constructor(data, dims){
@@ -22,7 +22,8 @@ class Scales {
       scaleLinear()
         .domain([0, 50, 100])
         .range(["#2c7bb6", "#ffff8c", "#d7191c"])
-        .interpolate(interpolateHcl)
+        // .interpolate(interpolateHcl)
+        .interpolate(interpolateHsl)
 
   };
 
