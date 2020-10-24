@@ -74,6 +74,10 @@ const NavMenu=()=>{
           <MyLink to="17-gradient-radial">17 Gradient: Radial</MyLink>
         </li>
 
+        <li>
+          <MyLink to="18-colour-interpolation">18 Colour Interpolation: d3-interpolateHSL</MyLink>
+        </li>
+
       </NavBox>
     </nav>
   );

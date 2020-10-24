@@ -19,6 +19,7 @@ import FilterTurbulence from './components/14FilterTurbulence';
 import FilterColorMatrix from './components/15FilterColorMatrix';
 import GradientLinear from './components/16GradientLinear';
 import GradientRadial from './components/17GradientRadial';
+import ColourInterpolation from './components/18ColourInterpolation';
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
         <Route path={`/15-filter-color-matrix`} component={FilterColorMatrix}/>
         <Route path={`/16-gradient-linear`} component={GradientLinear}/>
         <Route path={`/17-gradient-radial`} component={GradientRadial}/>
+        <Route path={`/18-colour-interpolation`} component={ColourInterpolation}/>
 
       </Router>
     </div>

@@ -29,6 +29,9 @@ class MultiColour {
       .attr('offset', (d)=>d.offset)
       .attr('stop-color', (d)=>d.color)
 
+
+  console.log(this.stops)
+
   this.targetRect =
     this.svg.append('rect')
       .attr('width', '100%')
