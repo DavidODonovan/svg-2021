@@ -15,8 +15,8 @@ class LinearGradient {
 
     linearGradient
       .attr('x1','0%')
-      .attr('y1','0%')
       .attr('x2','100%')
+      .attr('y1','0%')
       .attr('y2','0%')
 
     linearGradient

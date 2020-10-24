@@ -14,14 +14,15 @@ class MultiColour {
 
   defineLinearGradient=(data)=>{
     const frac = Math.floor(100/data.length);
-    this.newData = data.map((d,i)=>{
-      return { offset: `${i*frac}%`, color: `hsla(${d}, 100%, 50%, 1)`}
+
+    this.mappedData = data.map((d,i)=>{
+      return { offset: `${i*frac}%`, color: `hsla(${d}, 100%, 50%, 1)`};
   });
 
   this.stops =
     this.linearGradient
       .selectAll('stop')
-      .data(this.newData)
+      .data(this.mappedData)
 
   this.stops.enter()
     .append('stop')

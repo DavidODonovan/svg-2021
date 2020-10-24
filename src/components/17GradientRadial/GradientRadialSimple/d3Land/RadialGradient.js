@@ -103,7 +103,7 @@ class RadialGradient {
       .attr('x', 100)
       .attr('y', 100)
       .style('fill', 'url(#myRadial4)')
-  }
+  };
 };
 
 export default RadialGradient;
