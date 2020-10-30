@@ -15,9 +15,11 @@ class ClipPathRect {
   };
 
   enter=()=>{
+    
     this.clipPathG =
       this.primordialChaos.enter()
         .append('g')
+
     this.thePath =
       this.clipPathG
         .append('clipPath')

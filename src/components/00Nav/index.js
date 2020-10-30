@@ -75,7 +75,7 @@ const NavMenu=()=>{
         </li>
 
         <li>
-          <MyLink to="18-colour-interpolation">18 Colour Interpolation: d3-interpolateHCL</MyLink>
+          <MyLink to="18-colour-interpolation">18 Colour Interpolation: d3-interpolate</MyLink>
         </li>
 
       </NavBox>

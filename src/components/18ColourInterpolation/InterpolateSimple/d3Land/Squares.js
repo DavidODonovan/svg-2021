@@ -24,13 +24,13 @@ class Squares {
       .enter()
         .append('rect')
         .attr('class', 'mySquare')
-        .attr('x', (d,i)=>i*30)
+        .attr('x', (d,i)=>i*50)
         .attr('y', (this.dims.height/2))
         .attr('width', 40)
         .attr('height', 40)
         .attr('fill', (d)=>this.scales.colourScale(d))
         .attr('opacity',0.5)
-        .style('mix-blend-mode', 'darken')
+        // .style('mix-blend-mode', 'darken')
 
   };
 
