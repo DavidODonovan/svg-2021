@@ -78,6 +78,10 @@ const NavMenu=()=>{
           <MyLink to="/18-d3-animating-paths">18  Animating Paths (d3-interpolate)</MyLink>
         </li>
 
+        <li>
+          <MyLink to="19-css-animation-basic">19 CSS Animation Basic</MyLink>
+        </li>
+
       </NavBox>
     </nav>
   );
