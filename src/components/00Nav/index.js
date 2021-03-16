@@ -7,75 +7,75 @@ const NavMenu=()=>{
       <NavBox>
 
         <li>
-          <MyLink to={`/svg-basic-styling`}>01 svg basic styling</MyLink>
+          <MyLink to={`/01-svg-basic-styling`}>01 svg basic styling</MyLink>
         </li>
 
         <li>
-          <MyLink to={`/svg-viewport`}>02 svg viewport</MyLink>
+          <MyLink to={`/02-svg-viewport`}>02 svg viewport</MyLink>
         </li>
 
         <li>
-          <MyLink to={`/viewport-coordinate-system`}>03 viewPORT coordinate system</MyLink>
+          <MyLink to={`/03-viewport-coordinate-system`}>03 viewPORT coordinate system</MyLink>
         </li>
 
         <li>
-          <MyLink to={`/user-coordinate-system`}>04 USER coordinate system</MyLink>
+          <MyLink to={`/04-user-coordinate-system`}>04 USER coordinate system</MyLink>
         </li>
 
         <li>
-          <MyLink to={`/viewBox-attribute`}>05 viewBox attribute</MyLink>
+          <MyLink to={`/05-viewBox-attribute`}>05 viewBox attribute</MyLink>
         </li>
 
         <li>
-          <MyLink to={`/preserveAspectRatio-attribute`}>06 preserveAspectRatio attribute</MyLink>
+          <MyLink to={`/06preserveAspectRatio-attribute`}>06 preserveAspectRatio attribute</MyLink>
         </li>
 
         <li>
-          <MyLink to={`/preserveAspectRatio-interactive`}>07 interactive preserveAspectRatio </MyLink>
+          <MyLink to={`/07-preserveAspectRatio-interactive`}>07 interactive preserveAspectRatio </MyLink>
         </li>
 
         <li>
-          <MyLink to={`/three-red-feathers`}>08 three red feathers</MyLink>
+          <MyLink to={`/08-three-red-feathers`}>08 three red feathers</MyLink>
         </li>
 
         <li>
-          <MyLink to="/animating-paths">09  Animating Paths (d3-interpolate)</MyLink>
+          <MyLink to="09-clipping">10 Clipping</MyLink>
         </li>
 
         <li>
-          <MyLink to="10-clipping">10 Clipping</MyLink>
+          <MyLink to="10-masking">11 Masking</MyLink>
         </li>
 
         <li>
-          <MyLink to="11-masking">11 Masking</MyLink>
+          <MyLink to="11-filter-flood">12 Filter: feFlood</MyLink>
         </li>
 
         <li>
-          <MyLink to="12-filter-flood">12 Filter: feFlood</MyLink>
+          <MyLink to="12-filter-guassian">15 Filter: feGuassian</MyLink>
         </li>
 
         <li>
-          <MyLink to="13-filter-guassian">15 Filter: feGuassian</MyLink>
+          <MyLink to="13-filter-turbulence">16 Filter: feTurbulence</MyLink>
         </li>
 
         <li>
-          <MyLink to="14-filter-turbulence">16 Filter: feTurbulence</MyLink>
+          <MyLink to="14-filter-color-matrix">15 Filter: feColorMatrix</MyLink>
         </li>
 
         <li>
-          <MyLink to="15-filter-color-matrix">15 Filter: feColorMatrix</MyLink>
+          <MyLink to="15-gradient-linear">16 Gradient:  Linear</MyLink>
         </li>
 
         <li>
-          <MyLink to="16-gradient-linear">16 Gradient:  Linear</MyLink>
+          <MyLink to="16-gradient-radial">17 Gradient: Radial</MyLink>
         </li>
 
         <li>
-          <MyLink to="17-gradient-radial">17 Gradient: Radial</MyLink>
+          <MyLink to="17-colour-interpolation">18 Colour Interpolation: d3-interpolate</MyLink>
         </li>
 
         <li>
-          <MyLink to="18-colour-interpolation">18 Colour Interpolation: d3-interpolate</MyLink>
+          <MyLink to="/18-d3-animating-paths">09  Animating Paths (d3-interpolate)</MyLink>
         </li>
 
       </NavBox>

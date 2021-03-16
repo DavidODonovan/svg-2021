@@ -31,24 +31,24 @@ function App() {
       <GlobalWebkitScrolling/>
       <Router>
         <Route path="/" exact={true} component={Nav}/>
-        <Route path={`/svg-basic-styling`} component={SVGBasicStyling}/>
-        <Route path={`/svg-viewport`} component={ViewPORT}/>
-        <Route path={`/viewport-coordinate-system`} component={ViewPORTCoordinateSystem}/>
-        <Route path={`/user-coordinate-system`} component={UserCoordinateSystem}/>
-        <Route path={`/viewBox-attribute`} component={ViewboxAttribute}/>
-        <Route path={`/preserveAspectRatio-attribute`} component={PreserveAspectRatio}/>
-        <Route path={`/preserveAspectRatio-interactive`} component={PreserveAspectRatioInteractive}/>
-        <Route path={`/three-red-feathers`} component={ThreeRedFeathers}/>
-        <Route path={`/animating-paths`} component={AnimatingPaths}/>
-        <Route path={`/10-clipping`} component={Clipping}/>
-        <Route path={`/11-masking`} component={Masking}/>
-        <Route path={`/12-filter-flood`} component={FilterFlood}/>
-        <Route path={`/13-filter-guassian`} component={FilterGuassian}/>
-        <Route path={`/14-filter-turbulence`} component={FilterTurbulence}/>
-        <Route path={`/15-filter-color-matrix`} component={FilterColorMatrix}/>
-        <Route path={`/16-gradient-linear`} component={GradientLinear}/>
-        <Route path={`/17-gradient-radial`} component={GradientRadial}/>
-        <Route path={`/18-colour-interpolation`} component={ColourInterpolation}/>
+        <Route path={`/01-svg-basic-styling`} component={SVGBasicStyling}/>
+        <Route path={`/02-svg-viewport`} component={ViewPORT}/>
+        <Route path={`/03-viewport-coordinate-system`} component={ViewPORTCoordinateSystem}/>
+        <Route path={`/04-user-coordinate-system`} component={UserCoordinateSystem}/>
+        <Route path={`/05-viewBox-attribute`} component={ViewboxAttribute}/>
+        <Route path={`/06-preserveAspectRatio-attribute`} component={PreserveAspectRatio}/>
+        <Route path={`/07-preserveAspectRatio-interactive`} component={PreserveAspectRatioInteractive}/>
+        <Route path={`/08-three-red-feathers`} component={ThreeRedFeathers}/>
+        <Route path={`/09-clipping`} component={Clipping}/>
+        <Route path={`/10-masking`} component={Masking}/>
+        <Route path={`/11-filter-flood`} component={FilterFlood}/>
+        <Route path={`/12-filter-guassian`} component={FilterGuassian}/>
+        <Route path={`/13-filter-turbulence`} component={FilterTurbulence}/>
+        <Route path={`/14-filter-color-matrix`} component={FilterColorMatrix}/>
+        <Route path={`/15-gradient-linear`} component={GradientLinear}/>
+        <Route path={`/16-gradient-radial`} component={GradientRadial}/>
+        <Route path={`/17-colour-interpolation`} component={ColourInterpolation}/>
+        <Route path={`/18-d3-animating-paths`} component={AnimatingPaths}/>
 
       </Router>
     </div>
