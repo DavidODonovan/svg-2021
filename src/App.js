@@ -10,16 +10,16 @@ import ViewboxAttribute from './components/05ViewboxAttribute';
 import PreserveAspectRatio from './components/06PreserveAspectRatio';
 import PreserveAspectRatioInteractive from './components/07PreserveAspectRatioInteractive';
 import ThreeRedFeathers from './components/08ThreeRedFeathers';
-import AnimatingPaths from './components/09AnimatingPaths';
-import Clipping from './components/10Clipping';
-import Masking from './components/11Masking';
-import FilterFlood from './components/12FilterFlood';
-import FilterGuassian from './components/13FilterGuassian';
-import FilterTurbulence from './components/14FilterTurbulence';
-import FilterColorMatrix from './components/15FilterColorMatrix';
-import GradientLinear from './components/16GradientLinear';
-import GradientRadial from './components/17GradientRadial';
-import ColourInterpolation from './components/18ColourInterpolation';
+import Clipping from './components/09Clipping';
+import Masking from './components/10Masking';
+import FilterFlood from './components/11FilterFlood';
+import FilterGuassian from './components/12FilterGuassian';
+import FilterTurbulence from './components/13FilterTurbulence';
+import FilterColorMatrix from './components/14FilterColorMatrix';
+import GradientLinear from './components/15GradientLinear';
+import GradientRadial from './components/16GradientRadial';
+import ColourInterpolation from './components/17ColourInterpolation';
+import AnimatingPaths from './components/18AnimatingPaths';
 
 
 function App() {
