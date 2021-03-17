@@ -1,6 +1,6 @@
 import React from 'react';
 import './basic.css';
-import StyledSVG from './StyledSVG';
+import Cloud from './Cloud';
 
 // const square = document.querySelector('.square')
 // const hex = document.querySelector('.hexagon')
@@ -20,7 +20,7 @@ import StyledSVG from './StyledSVG';
 const CSSAnimationBasic=()=>{
   return (
     <div>
-      <StyledSVG/>
+      <Cloud/>
       <hr/>
       <svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
         <g fill="none" fill-rule="evenodd">
