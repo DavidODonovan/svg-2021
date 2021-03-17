@@ -1,19 +1,129 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import { ReactComponent as ReactLogo } from "./logo.svg";
+import styled, { keyframes } from "styled-components";
 import SVGMaster from './SVGMaster';
 
-const SVG = styled(SVGMaster)`
-  width: 24px;
-  height: 24px;
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 `;
 
-const Cloud = ({ className }) => (
-    <SVG  className={className}>
-      <path
-        fill="blue"
-        d="M19.47,10.54A6,6,0,0,0,14,7a5.82,5.82,0,0,0-1.39.18,5,5,0,0,0-9,2A3,3,0,0,0,4.5,15h1a4,4,0,0,0,0,.5A3.5,3.5,0,0,0,9,19h9.17a4.33,4.33,0,0,0,1.3-8.46ZM4.5,13a1,1,0,0,1,0-2,1,1,0,0,0,1-1,3,3,0,0,1,3-3,3,3,0,0,1,2.22,1,6,6,0,0,0-2.66,4.13,3.49,3.49,0,0,0-1.5.87Zm13.67,4H9a1.5,1.5,0,0,1,0-3,1,1,0,0,0,1-1,4,4,0,0,1,7.78-1.29,1,1,0,0,0,.78.67A2.33,2.33,0,0,1,18.17,17Z"
-      />
-    </SVG>
-)
+const fade = (primarycolor, secondarycolor) => keyframes`
+0% {
+fill:${primarycolor};
+}
+50% {
+ fill:${secondarycolor};
+}
+100%{
+  fill:${primarycolor};
+}
+`;
 
-export default SVGMaster;
+const pulse = keyframes`
+0% {
+  transform: scale(0);
+  opacity: 1;
+  transform-origin: center;
+}
+100% {
+  transform: scale(4.5);
+  opacity: 0;
+  transform-origin: center;
+}
+`;
+
+const StyledLogo = styled(ReactLogo)`
+  animation: ${rotate} infinite 20s linear;
+  height: 25rem;
+  width: 25rem;
+  display: inline-block;
+  margin: auto;
+  .lines {
+    animation: ${props => fade(props.primarycolor, props.secondarycolor)}
+      infinite 8s linear;
+  }
+  .circle {
+    animation: ${pulse} infinite 4s linear;
+    &:hover {
+      animation-play-state: paused;
+      cursor: pointer;
+    }
+  }
+`;
+
+const circlePulse = (colorOne, colorTwo) => keyframes`
+0% {
+  fill:${colorOne};
+  stroke-width:10px
+}
+50% {
+  fill:${colorTwo};
+  stroke-width:2px
+}
+100%{
+  fill:${colorOne};
+  stroke-width:10px
+}
+`;
+const StyledCircle = styled.svg`
+  margin: auto;
+  display: inline-block;
+`;
+const StyledInnerCircle = styled.circle`
+  animation: ${props => circlePulse(props.colorOne, props.colorTwo)} infinite 4s
+    linear;
+`;
+
+const circleOne = (
+  <StyledCircle colorOne="red" colorTwo="green" height="100" width="100">
+    <StyledInnerCircle
+      colorOne="palevioletred"
+      colorTwo="mediumslateblue"
+      cx="50"
+      cy="50"
+      r="40"
+      stroke="black"
+      stroke-width="3"
+    />
+  </StyledCircle>
+);
+const circleTwo = (
+  <StyledCircle colorOne="red" colorTwo="green" height="100" width="100">
+    <StyledInnerCircle
+      colorOne="tomato"
+      colorTwo="hotpink"
+      cx="50"
+      cy="50"
+      r="40"
+      stroke="black"
+      stroke-width="3"
+    />
+  </StyledCircle>
+);
+
+function AttemptOne() {
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexWrap: "wrap"
+      }}
+    >
+      <StyledLogo primaryColor="#61DAFB" secondarycolor="violet" />
+      <div style={{ width: "200px", margin: "auto" }}>
+        {circleTwo}
+        {circleOne}
+        {circleOne}
+        {circleTwo}
+      </div>
+    </div>
+  );
+};
+
+export default AttemptOne;

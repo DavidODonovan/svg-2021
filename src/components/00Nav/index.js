@@ -27,7 +27,7 @@ const NavMenu=()=>{
         </li>
 
         <li>
-          <MyLink to={`/06preserveAspectRatio-attribute`}>06 preserveAspectRatio attribute</MyLink>
+          <MyLink to={`/06-preserveAspectRatio-attribute`}>06 preserveAspectRatio attribute</MyLink>
         </li>
 
         <li>
