@@ -7,6 +7,10 @@ const NavMenu=()=>{
       <NavBox>
 
         <li>
+          <MyLink to={`/00-svgs-in-react`}>00 ***START HERE!!!--->****SVGS In React!****--- </MyLink>
+        </li>
+
+        <li>
           <MyLink to={`/01-svg-basic-styling`}>01 svg basic styling</MyLink>
         </li>
 

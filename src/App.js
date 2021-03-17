@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import {  GlobalNormalizeCSS, GlobalResetCSS, GlobalTypographyCSS, GlobalWebkitScrolling } from './globalStyles';
 import Nav from './components/00Nav';
+
+import SVGSInReact from './components/00SVGSInReact';
 import SVGBasicStyling from './components/01SVGBasicStyling';
 import ViewPORT from './components/02ViewPORT';
 import ViewPORTCoordinateSystem from './components/03ViewPORTCoordinateSystem';
@@ -30,8 +32,11 @@ function App() {
       <GlobalResetCSS/>
       <GlobalTypographyCSS/>
       <GlobalWebkitScrolling/>
+
       <Router>
+
         <Route path="/" exact={true} component={Nav}/>
+        <Route path={`/00-svgs-in-react`} component={SVGSInReact}/>
         <Route path={`/01-svg-basic-styling`} component={SVGBasicStyling}/>
         <Route path={`/02-svg-viewport`} component={ViewPORT}/>
         <Route path={`/03-viewport-coordinate-system`} component={ViewPORTCoordinateSystem}/>
