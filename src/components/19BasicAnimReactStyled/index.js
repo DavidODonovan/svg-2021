@@ -17,14 +17,20 @@ const pulseAnim = (colorOne, colorTwo) => keyframes`
 `;
 
 const PulsingCircle = styled.circle`
-  animation: ${props => pulseAnim(props.colorone, props.colortwo)} infinite 4s linear;
+  animation: ${props => pulseAnim("green", "purple")} infinite 4s linear;
+  r: 100px;
+  stroke: black;
 `;
 
-const TestCircle = styled.circle`
-  fill: "purple";
-`;
+const MyCircle=styled.circle.attrs((props)=>({
 
-const MyCircle=styled.circle.attrs((props)=>({ fill: "red"}))`
+}))`
+  r: 200px;
+  fill: blue;
+  cx: 200px;
+  cy: 50px;
+  stroke: black;
+  stroke-width: 20px;
 `;
 
 const AnimOne=()=>{
@@ -32,10 +38,9 @@ const AnimOne=()=>{
     <div>
       <svg>
 
-        <MyCircle r="50px" cx="100px" cy="100px"/>
+        <MyCircle/>
 
-        <PulsingCircle r="100px" colorone="blue" colortwo="purple"/>
-
+        <PulsingCircle />
 
       </svg>
     </div>
