@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 import { ReactComponent as LogoReact } from './logo.svg';
-import { ReactComponent as Long } from './long.svg';
 
 export const StyledLogo=styled(LogoReact).attrs((props)=>({
   /* jsx svg element attrs go here */
@@ -19,22 +18,6 @@ export const StyledLogo=styled(LogoReact).attrs((props)=>({
 
   &:hover {
     cursor: pointer;
-    fill: red;
-  }
-`;
-
-export const LongStyled=styled(Long).attrs((props)=>({
-  /* jsx svg element attrs go here */
-}))`
-
-  width: 100%;
-
-  background: red;
-  & path {
-    fill: blue;
-    stroke: yellow;
-  }
-  & g {
     fill: red;
   }
 `;
