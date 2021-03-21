@@ -36,15 +36,10 @@ const MyCircle=styled.circle.attrs((props)=>({
 
 const AnimOne=()=>{
   return (
-    <div>
-        <svg>
-
-          <MyCircle/>
-
-          <PulsingCircle />
-
-        </svg>
-    </div>
+    <svg aria-hidden="true" focusable="false">
+      <MyCircle/>
+      <PulsingCircle />
+    </svg>
   );
 };
 
