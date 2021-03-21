@@ -1,17 +1,36 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { ReactComponent as NewLogo } from './newLogo.svg';
 
-export const MyLogo=styled(NewLogo).attrs(()=>({
+const hexagonKeyframes = keyframes`
+  from {
+    transform: rotateY(0deg)
+  }
+  to {
+    transform: rotateY(360deg)
+  }
+`;
 
+const squareKeyframes=keyframes`
+  from {
+    stroke-dashoffset: -350;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+`;
+
+export const MyLogo=styled(NewLogo).attrs(()=>({
 }))`
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
+
+  & #blueSquare path {
+    stroke-dasharray: 350;
+    stroke-dashoffset: -350;
+    animation: ${squareKeyframes} 1s linear;
+  }
 
   & #hexagon path {
+    animation: ${hexagonKeyframes} 2s linear ;
+
     stroke-dasharray: 4;
     stroke-dashoffset: -4;
     stroke: orange;
