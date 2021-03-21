@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { ReactComponent as BoringLogo } from './newLogo.svg';
+import { ReactComponent as NewLogo } from './newLogo.svg';
 
-export const NewLogo=styled(BoringLogo).attrs(()=>({
+export const MyLogo=styled(NewLogo).attrs(()=>({
 
 }))`
   position: absolute;
@@ -12,7 +12,7 @@ export const NewLogo=styled(BoringLogo).attrs(()=>({
   margin: auto;
 
   & .greySquare {
-    stroke-dasharray: ;
-    stroke-dashoffset: ;
+    stroke-dasharray: 170;
+    stroke-dashoffset: -174;
   }
 `;
