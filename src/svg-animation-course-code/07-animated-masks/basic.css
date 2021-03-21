@@ -1,0 +1,78 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+#animatedCircleMask {
+  fill: #666;
+  animation: myAnim 1000ms infinite;
+}
+
+@keyframes myAnim {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.normal {
+	filter: invert(0%);
+}
+
+.inverted {
+	/* filter: invert(100%); */
+  animation: inverter 1s infinite;
+}
+
+@keyframes inverter {
+  0% {
+    filter: invert(0%);
+  }
+  50% {
+    filter: invert(10%);
+  }
+  100% {
+    filter: invert(0%);
+  }
+}
+/*
+:root {
+  --beige: hsl(48, 94%, 92%);
+  --master-width: 100vw;
+  --master-height: 100vh;
+}
+
+.myLine {
+  stroke: red;
+  animation: myAnim 1000ms 1;
+}
+
+.mySvg {
+  background-color: black;
+  width: var(--master-width);
+  height: var(--master-height);
+}
+
+.myRect {
+  fill: red;
+  opacity: 0.5;
+  width: calc(var(--master-width)/ 4);
+  height: calc(var(--master-height)/ 8);
+}
+
+@media (max-width: 600px) {
+  .myRect {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .myElipse {
+    display: none;
+  }
+} */

@@ -1,0 +1,52 @@
+
+html, body {
+  /* background-color: #ffeead; */
+  margin: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+
+.monkey {
+  /* fill: blue; */
+  stroke: red;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: -2000;
+  stroke-width: 2px;
+  animation-name: drawMonkey;
+  animation-duration: 2000ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.boat {
+  /* stroke: red; */
+  /* animation: drawMonkey 3s 1; */
+}
+
+
+@keyframes drawMonkey {
+  0% {
+    stroke: red;
+    stroke-dashoffset: -2000;
+  }
+  30% {
+    stroke: green;
+  }
+  70% {stroke: yellow}
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

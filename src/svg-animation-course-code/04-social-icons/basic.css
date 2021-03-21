@@ -1,0 +1,84 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --beige: hsl(48, 94%, 92%);
+}
+
+.grid {
+  background-color: var(--beige);
+}
+
+.twitter-icon-group {
+}
+
+.twitter-outline, .twitter-icon {
+  /* transition: 300ms all; */
+  transform-origin: 22% 50%;
+}
+
+.activeOutline {
+  animation: outlineAnim 500ms 1;
+}
+.activeIcon {
+  animation: iconAnim 500ms 1;
+}
+
+@keyframes outlineAnim {
+  0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: scale(0)
+  }
+  100% {
+    transform: scale(1)
+  }
+}
+
+@keyframes iconAnim {
+  0% {
+    transform: scale(1);
+    stroke: rgb(64, 153, 255);
+
+  }
+  50% {
+    transform: scale(2);
+    stroke-width: 2;
+  }
+  100% {
+    transform: scale(1);
+    stroke: transparent;
+
+  }
+}
+/*
+.youtubeCircleActive{
+  transform-origin: 50% 50%;
+  transform: scale(1.2)
+  transition: 200ms;
+  animation: youtubeCircleAnim 500ms 1;
+} */
+
+.youtube-circle-static:hover {
+  transform-origin: 50% 50%;
+  transform: scale(1.2);
+  transition: 200ms;
+  stroke: blue;
+  /* animation: youtubeCircleAnim 500ms 1; */
+}
+
+@keyframes youtubeCircleAnim {
+   0% {
+     transform: scale(1);
+   }
+   50% {
+     transform: scale(1.2);
+   }
+   100% {
+     transform: scale(1);
+   }
+}
