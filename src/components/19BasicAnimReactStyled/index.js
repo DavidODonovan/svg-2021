@@ -20,6 +20,7 @@ const PulsingCircle = styled.circle`
   animation: ${props => pulseAnim("green", "purple")} infinite 4s linear;
   r: 100px;
   stroke: black;
+  cursor: pointer;
 `;
 
 const MyCircle=styled.circle.attrs((props)=>({
@@ -36,13 +37,13 @@ const MyCircle=styled.circle.attrs((props)=>({
 const AnimOne=()=>{
   return (
     <div>
-      <svg>
+        <svg>
 
-        <MyCircle/>
+          <MyCircle/>
 
-        <PulsingCircle />
+          <PulsingCircle />
 
-      </svg>
+        </svg>
     </div>
   );
 };

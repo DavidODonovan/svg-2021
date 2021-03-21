@@ -1,6 +1,5 @@
 import React from 'react';
 import {  StyledLogo } from './style';
-import Test from './Test';
 
 const SVGSInReact=()=>{
   return(
