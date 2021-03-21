@@ -1,0 +1,120 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --beige: hsl(48, 94%, 92%);
+  --master-width: 100vw;
+  --master-height: 100vh;
+}
+
+body {
+  background-color: hsla(21, 78%, 58%, 0.65);
+}
+
+.mySvg {
+  width: var(--master-width);
+  height: var(--master-height);
+}
+
+#animatedCircleMask {
+  fill: #666;
+  animation: myAnim 2000ms infinite;
+}
+
+#animatedImage {
+  animation: newAnim 4000ms infinite;
+}
+
+@keyframes newAnim {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes myAnim {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(400px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.normal {
+	filter: invert(0%);
+}
+
+.inverted {
+	/* filter: invert(100%); */
+  animation: inverter 1s infinite;
+}
+
+@keyframes inverter {
+  0% {
+    filter: invert(0%);
+  }
+  50% {
+    filter: invert(10%);
+  }
+  100% {
+    filter: invert(0%);
+  }
+}
+
+#svg-image {
+  animation: myBlurAnim 1000ms 10
+}
+
+@keyframes myBlurAnim {
+  0% {
+     filter: none;
+  }
+  100% {
+    filter:url(#blur-effect);
+  }
+}
+
+
+/*
+
+
+.myLine {
+  stroke: red;
+  animation: myAnim 1000ms 1;
+}
+
+.mySvg {
+  background-color: black;
+  width: var(--master-width);
+  height: var(--master-height);
+}
+
+.myRect {
+  fill: red;
+  opacity: 0.5;
+  width: calc(var(--master-width)/ 4);
+  height: calc(var(--master-height)/ 8);
+}
+
+@media (max-width: 600px) {
+  .myRect {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .myElipse {
+    display: none;
+  }
+} */

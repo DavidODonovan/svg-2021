@@ -58,6 +58,7 @@ function App() {
         <Route path={`/18-d3-animating-paths`} component={AnimatingPaths}/>
         <Route path="/19-basic-svg-anim-pulsing-thing" component={BasicAnimPulsingThing}/>
         <Route path="/20-svg-background-svgs" component={SVGBackgroundSVGs}/>
+
       </Router>
     </div>
   );
