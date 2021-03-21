@@ -11,8 +11,9 @@ export const MyLogo=styled(NewLogo).attrs(()=>({
   right: 0;
   margin: auto;
 
-  & .greySquare {
-    stroke-dasharray: 170;
-    stroke-dashoffset: -174;
+  & #hexagon path {
+    stroke-dasharray: 4;
+    stroke-dashoffset: -4;
+    stroke: orange;
   }
 `;
