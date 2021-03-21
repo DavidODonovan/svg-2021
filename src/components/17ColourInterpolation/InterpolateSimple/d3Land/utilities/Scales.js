@@ -22,7 +22,6 @@ class Scales {
       scaleLinear()
         .domain([0, 50, 100])
         .range(["#2c7bb6", "#ffff8c", "#d7191c"])
-        // .interpolate(interpolateHcl)
         .interpolate(interpolateHsl)
 
   };

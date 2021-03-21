@@ -83,7 +83,7 @@ const NavMenu=()=>{
         </li>
 
         <li>
-          <MyLink to="/19-basic-svg-anim-pulsing-thing">19 Basic SVG Anim Pulsing Thing</MyLink>
+          <MyLink to="/19-basic-svg-anim-pulsing-thing">19 SVG Pulsing Thing Animation</MyLink>
         </li>
 
         <li>

@@ -10,4 +10,9 @@ export const NewLogo=styled(BoringLogo).attrs(()=>({
   bottom: 0;
   right: 0;
   margin: auto;
+
+  & .greySquare {
+    stroke-dasharray: ;
+    stroke-dashoffset: ;
+  }
 `;

@@ -4,6 +4,7 @@
   stroke="#1a1ede"
   stroke-width="1.32" d="M54.6083+76.2741L37.1392+66.6415L37.1392+47.3764L54.6083+37.7439L72.0774+47.3765L72.0774+66.6415L54.6083+76.2741Z" fill="none" stroke-linecap="butt" opacity="1" stroke-linejoin="round"/>
 <path
+  class="greySquare"
   stroke="#3e66a5"
   stroke-width="1.32" d="M33.1064+34.907L76.7217+34.907L76.7217+79.3086L33.1064+79.3086L33.1064+34.907Z" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
 </svg>
