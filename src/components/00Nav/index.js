@@ -90,6 +90,9 @@ const NavMenu=()=>{
           <MyLink to="/20-svg-background-svgs">20 SVG Background SVGs</MyLink>
         </li>
 
+        <li>
+          <MyLink to="21-spinny-thing">21 Spinny Logo Thing</MyLink>
+        </li>
       </NavBox>
     </nav>
   );
