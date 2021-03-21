@@ -5,8 +5,7 @@ import InterpolateSimple from './InterpolateSimple';
 const ColourInterpolate=()=>{
   return (
     <div style={{
-      height: "100%",
-      background: "hsla(300, 100%, 3%, 1)"
+      height: "100%"
     }}>
       <div>colour interpolations</div>
       <div style={{height: "100%", display: "grid", gridTemplateRows: "1fr 0.5fr"}}>
