@@ -22,7 +22,8 @@ import GradientLinear from './components/15GradientLinear';
 import GradientRadial from './components/16GradientRadial';
 import ColourInterpolation from './components/17ColourInterpolation';
 import AnimatingPaths from './components/18AnimatingPaths';
-import BasicAnimReactStyled from './components/19BasicAnimReactStyled';
+import BasicAnimPulsingThing from './components/19BasicAnimPulsingThing';
+import SVGBackgroundSVGs from './components/20SVGBackgroundSVGs';
 
 
 function App() {
@@ -55,8 +56,8 @@ function App() {
         <Route path={`/16-gradient-radial`} component={GradientRadial}/>
         <Route path={`/17-colour-interpolation`} component={ColourInterpolation}/>
         <Route path={`/18-d3-animating-paths`} component={AnimatingPaths}/>
-        <Route path={`/19-basic-animation-react-styled`} component={BasicAnimReactStyled}/>
-
+        <Route path="/19-basic-svg-anim-pulsing-thing" component={BasicAnimPulsingThing}/>
+        <Route path="/20-svg-background-svgs" component={SVGBackgroundSVGs}/>
       </Router>
     </div>
   );

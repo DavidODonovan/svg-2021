@@ -83,7 +83,11 @@ const NavMenu=()=>{
         </li>
 
         <li>
-          <MyLink to="/19-basic-animation-react-styled">19 React + Styled-Components Basic Animation </MyLink>
+          <MyLink to="/19-basic-svg-anim-pulsing-thing">19 Basic SVG Anim Pulsing Thing</MyLink>
+        </li>
+
+        <li>
+          <MyLink to="/20-svg-background-svgs">20 SVG Background SVGs</MyLink>
         </li>
 
       </NavBox>
