@@ -6,10 +6,7 @@ export const HappySquiggle = styled(MyLine)`
   & path {
     stroke: red;
     stroke-dasharray: ${(props)=>props.dasharray};
-    stroke-dashoffset: ${(props)=>{
-      console.log(props.dashoffset)
-      return props.dashoffset
-      }};
+    stroke-dashoffset: ${(props)=>props.dashoffset};
   }
 `;
 
