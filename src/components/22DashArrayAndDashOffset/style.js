@@ -3,8 +3,21 @@ import { ReactComponent as MyLine } from './happySquiggle.svg';
 
 export const HappySquiggle = styled(MyLine)`
 
+  & path {
+    stroke: red;
+    stroke-dasharray: ${(props)=>props.dasharray};
+    stroke-dashoffset: ${(props)=>{
+      console.log(props.dashoffset)
+      return props.dashoffset
+      }};
+  }
 `;
 
+
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+//~~~~~~~~~~~~~~~~~~~ Slider Stuff ~~~~~~~~~~~~~~~~~~~~//
 const THUMBStyles=(props)=>(`
   width: 15px;
   height: 15px;

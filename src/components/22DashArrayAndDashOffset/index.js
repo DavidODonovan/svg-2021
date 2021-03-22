@@ -3,14 +3,12 @@ import { HappySquiggle, RangeSlider } from './style';
 
 const GetPathLengthInReact=()=>{
   const domNode = useRef(null);
-  const [val, setVal]=useState(0.5);
   const [values, setValues]=useState({dasharray: 0, dashoffset: 0});
   const [maxVal, setMaxVal]=useState(100);
 
 
   const handleChange=(e)=>{
     const { name, value } = e.target;
-    setVal(e.target.value);
     setValues({...values, [name]: value });
   };
 
@@ -23,7 +21,7 @@ const GetPathLengthInReact=()=>{
       style={{padding: "0.5em"}}
       >
 
-      <HappySquiggle ref={domNode}/>
+      <HappySquiggle ref={domNode} {...values}/>
 
       <strong>stroke-dasharray: {values.dasharray}</strong>
       <RangeSlider
