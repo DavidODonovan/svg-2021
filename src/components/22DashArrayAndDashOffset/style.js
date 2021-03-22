@@ -6,8 +6,8 @@ export const HappySquiggle = styled(MyLine)`
 `;
 
 const THUMBStyles=(props)=>(`
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   background: white;
   cursor: pointer;
 
@@ -15,12 +15,13 @@ const THUMBStyles=(props)=>(`
   border-radius: 5px;
 
   // goes OUTSIDE the slider! cool
-  // outline: 5px solid red
+  // outline: 5px solid hsla(240, 100%, 50%, 1);
+  box-shadow: 0 4px 10px hsla(0, 0%, 40%, 1);
 `);
 
 const TRACKStyles=()=>(`
   width: 100%;
-  height: 24px;
+  height: 10;
   cursor: pointer;
   box-shadow: inset 0 4px 10px hsla(0, 0%, 40%, 1);
   border-radius: 1.3px;
@@ -31,7 +32,7 @@ export const RangeSlider=styled.input.attrs({type:'range'})`
   appearance: none;
 
   // specific width is required for Firefox.
-  width: 200px;
+  width: 400px;
 
   // otherwise white in Chrome.
   background: transparent;

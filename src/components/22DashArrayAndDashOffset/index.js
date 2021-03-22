@@ -4,31 +4,49 @@ import { HappySquiggle, RangeSlider } from './style';
 const GetPathLengthInReact=()=>{
   const domNode = useRef(null);
   const [val, setVal]=useState(0.5);
+  const [values, setValues]=useState({dasharray: 0, dashoffset: 0});
+  const [maxVal, setMaxVal]=useState(100);
+
 
   const handleChange=(e)=>{
+    const { name, value } = e.target;
     setVal(e.target.value);
+    setValues({...values, [name]: value });
   };
 
+  useEffect(()=>{
+    setMaxVal(Math.floor(domNode.current.children[0].getTotalLength()))
+  },[domNode]);
+
   return (
-    <div>
+    <div
+      style={{padding: "0.5em"}}
+      >
 
-      <input type="range" style={{
-        width:"100%",
-        background: "gray"
-      }}/>
+      <HappySquiggle ref={domNode}/>
 
-      <HappySquiggle/>
-
+      <strong>stroke-dasharray: {values.dasharray}</strong>
       <RangeSlider
-        value={val}
+        name="dasharray"
+        value={values.dasharray}
         type="range"
-        min="0.01"
-        max="1"
-        step="0.01"
+        min="0"
+        max={maxVal}
+        step="1"
         onChange={handleChange}
       />
-
-      <div>{val}</div>
+      <br/>
+      <br/>
+      <strong>stroke-dashoffset: {values.dashoffset}</strong>
+      <RangeSlider
+        name="dashoffset"
+        value={values.dashoffset}
+        type="range"
+        min="0"
+        max={maxVal}
+        step="1"
+        onChange={handleChange}
+      />
 
     </div>
   );
