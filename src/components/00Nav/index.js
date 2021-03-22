@@ -99,6 +99,13 @@ const NavMenu=()=>{
           <MyLink to="/22-stroke-dasharray-dashoffset">22 stroke-dasharray & stroke-dashoffset</MyLink>
         </li>
 
+        <li>
+          <MyLink to="/23-multi-valued-dash-arrays">23 Multi valued dasharrays</MyLink>
+        </li>
+
+        <li>
+          <MyLink to="/24-animating-dashoffset-with-keyframes">24 Animating dashoffset with keyframes</MyLink>
+        </li>
       </NavBox>
     </nav>
   );

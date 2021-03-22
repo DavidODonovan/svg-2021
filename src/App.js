@@ -27,6 +27,8 @@ import SVGBackgroundSVGs from './components/20SVGBackgroundSVGs';
 import AnimateDrawPaths from './components/21AnimateDrawPathsBasic';
 import GetPathLengthInReact from './components/21GetPathLengthInReact';
 import DashArrayAndDashOffset from './components/22DashArrayAndDashOffset';
+import MultiValuedDashArrays from './components/23MultiValuedDashArrays';
+import AnimatingDashOffsetWithKeyFrames from './components/24AnimatingDashOffsetWithKeyFrames';
 
 
 function App() {
@@ -63,6 +65,8 @@ function App() {
         <Route path="/20-svg-background-svgs" component={SVGBackgroundSVGs}/>
         <Route path="/21-get-path-length-in-react" component={GetPathLengthInReact}/>
         <Route path="/22-stroke-dasharray-dashoffset" component={DashArrayAndDashOffset}/>
+        <Route path="/23-multi-valued-dash-arrays" component={MultiValuedDashArrays}/>
+        <Route path="/24-animating-dashoffset-with-keyframes" component={AnimatingDashOffsetWithKeyFrames}/>
 
       </Router>
     </div>

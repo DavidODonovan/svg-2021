@@ -20,7 +20,13 @@ const GetPathLengthInReact=()=>{
     <div
       style={{padding: "0.5em"}}
       >
-
+      <div>
+        <em style={{color: "red"}}>stroke-dasharray lets you specify the length of the rendered part of the line, then the length of the gap.
+          <br/>
+          <br/>
+        stroke-dashoffset lets you change where the dasharray starts.</em>
+      </div>
+      <br/>
       <HappySquiggle ref={domNode} {...values}/>
 
       <strong>stroke-dasharray: {values.dasharray}</strong>
@@ -45,6 +51,12 @@ const GetPathLengthInReact=()=>{
         step="1"
         onChange={handleChange}
       />
+      <br/>
+      <br/>
+
+      <div>
+        Drag both sliders up to their maximum, then slowly decrease the dashoffset. <em>Voilà, you just made the line draw!</em>
+      </div>
 
     </div>
   );
