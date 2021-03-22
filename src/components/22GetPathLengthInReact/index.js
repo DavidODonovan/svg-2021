@@ -6,13 +6,8 @@ const GetPathLengthInReact=()=>{
 
   useEffect(()=>{
     let domNodeCurrent = domNode.current;
-    console.log(domNodeCurrent)
+    console.log(domNodeCurrent.children[0].children[0].getTotalLength());
   }, [domNode]);
-
-  const elementCallback=(elem)=>{
-    console.log(elem);
-  };
-
   return (
     <div>
       <MyLogo ref={domNode}/>
