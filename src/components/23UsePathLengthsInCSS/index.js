@@ -12,7 +12,7 @@ const GetPathLengthInReact=()=>{
     let layers = domNodeCurrent.children;
     for(let i=0; i<layers.length; i++){
       let layer = layers[i]
-      let layerName = layer.id;
+      let layerName = layer.id.toLowerCase();
       let pathLength = layer.children[0].getTotalLength();
       newObj[layerName] = Math.floor(pathLength);
     };
@@ -42,7 +42,7 @@ const GetPathLengthInReact=()=>{
         <strong>Path lengths:</strong>
       </div>
       <div>{objectToText}</div>
-      <MyLogo ref={domNode}/>
+      <MyLogo ref={domNode} {...pathLengths}/>
     </div>
   );
 };

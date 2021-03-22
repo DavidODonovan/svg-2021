@@ -17,15 +17,15 @@ const GetPathLengthInReact=()=>{
       newObj[layerName] = Math.floor(pathLength);
     };
     setPathLengths(newObj);
-
-    console.log(domNodeCurrent.children[0])
-    console.log(domNodeCurrent.children[1])
-    console.log(domNodeCurrent.children[2].children[0])
-    console.log(domNodeCurrent.children[0].id);
-    console.log(domNodeCurrent.children[0].id);
-    console.log(domNodeCurrent.children[0].children[0].getTotalLength());
-    domNodeCurrent.children[0].children[0].style.setProperty("fill", "blue", "important")
-
+    //
+    // console.log(domNodeCurrent.children[0])
+    // console.log(domNodeCurrent.children[1])
+    // console.log(domNodeCurrent.children[2].children[0])
+    // console.log(domNodeCurrent.children[0].id);
+    // console.log(domNodeCurrent.children[0].id);
+    // console.log(domNodeCurrent.children[0].children[0].getTotalLength());
+    // domNodeCurrent.children[0].children[0].style.setProperty("fill", "blue", "important")
+    //
   }, [domNode]);
 
   useEffect(()=>{
