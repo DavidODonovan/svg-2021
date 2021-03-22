@@ -5,14 +5,14 @@ export const CircularBells=styled(Circles).attrs((props)=>({
 
 }))`
   & circle {
+    cursor: pointer;
     fill: red;
+
+    ${({$clicked})=>{
+      console.log($clicked)
+      if($clicked){
+        return `fill: blue;`
+      }
+    }};
   }
 `;
-
-//
-// ${({navOpen})=>{
-//   if(navOpen)
-//     return `
-//       transform: translateX(0);
-//       `;
-// }};
