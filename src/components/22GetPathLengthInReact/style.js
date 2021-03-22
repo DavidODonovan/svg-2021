@@ -22,6 +22,8 @@ const squareKeyframes=keyframes`
 export const MyLogo=styled(NewLogo).attrs(()=>({
 }))`
 
+  & #redCircle path {
+  }
   & #blueSquare path {
   }
 
