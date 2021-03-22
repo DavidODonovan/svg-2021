@@ -106,6 +106,10 @@ const NavMenu=()=>{
         <li>
           <MyLink to="/24-animating-dashoffset-with-keyframes">24 Animating dashoffset with keyframes</MyLink>
         </li>
+
+        <li>
+          <MyLink to="/25-trigger-anim-on-click">25 Trigger Anim onClick</MyLink>
+        </li>
       </NavBox>
     </nav>
   );

@@ -29,6 +29,7 @@ import GetPathLengthInReact from './components/21GetPathLengthInReact';
 import DashArrayAndDashOffset from './components/22DashArrayAndDashOffset';
 import MultiValuedDashArrays from './components/23MultiValuedDashArrays';
 import AnimatingDashOffsetWithKeyFrames from './components/24AnimatingDashOffsetWithKeyFrames';
+import TriggerAnimOnClick from './components/25TriggerAnimOnClick';
 
 
 function App() {
@@ -67,6 +68,7 @@ function App() {
         <Route path="/22-stroke-dasharray-dashoffset" component={DashArrayAndDashOffset}/>
         <Route path="/23-multi-valued-dash-arrays" component={MultiValuedDashArrays}/>
         <Route path="/24-animating-dashoffset-with-keyframes" component={AnimatingDashOffsetWithKeyFrames}/>
+        <Route path="/25-trigger-anim-on-click" component={TriggerAnimOnClick}/>
 
       </Router>
     </div>
