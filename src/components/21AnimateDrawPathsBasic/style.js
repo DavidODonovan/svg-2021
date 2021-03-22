@@ -25,11 +25,10 @@ export const MyLogo=styled(NewLogo).attrs(()=>({
   & #blueSquare path {
     stroke-dasharray: 350;
     stroke-dashoffset: -350;
-    animation: ${squareKeyframes} 1s linear;
+    animation: ${squareKeyframes} 1s linear infinite;
   }
 
   & #hexagon path {
-    animation: ${hexagonKeyframes} 2s linear ;
 
     stroke-dasharray: 4;
     stroke-dashoffset: -4;

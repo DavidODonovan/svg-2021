@@ -91,8 +91,13 @@ const NavMenu=()=>{
         </li>
 
         <li>
-          <MyLink to="21-spinny-thing">21 Spinny Logo Thing</MyLink>
+          <MyLink to="21-animate-draw-paths">21 Animate Draw Paths</MyLink>
         </li>
+
+        <li>
+          <MyLink to="/22-get-path-length-in-react">22 Get Path Length In React</MyLink>
+        </li>
+
       </NavBox>
     </nav>
   );
