@@ -98,6 +98,10 @@ const NavMenu=()=>{
           <MyLink to="/22-get-path-length-in-react">22 Get Path Length In React</MyLink>
         </li>
 
+        <li>
+          <MyLink to="/23-use-path-lengths-in-css">23 Use Path Lengths In CSS</MyLink>
+        </li>
+
       </NavBox>
     </nav>
   );
