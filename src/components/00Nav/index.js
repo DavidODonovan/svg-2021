@@ -90,16 +90,13 @@ const NavMenu=()=>{
           <MyLink to="/20-svg-background-svgs">20 SVG Background SVGs</MyLink>
         </li>
 
+
         <li>
-          <MyLink to="21-animate-draw-paths">21 Animate Draw Paths</MyLink>
+          <MyLink to="/21-get-path-length-in-react">21 Get Path Length In React</MyLink>
         </li>
 
         <li>
-          <MyLink to="/22-get-path-length-in-react">22 Get Path Length In React</MyLink>
-        </li>
-
-        <li>
-          <MyLink to="/23-use-path-lengths-in-css">23 Use Path Lengths In CSS</MyLink>
+          <MyLink to="/22-stroke-dasharray-dashoffset">22 stroke-dasharray & stroke-dashoffset</MyLink>
         </li>
 
       </NavBox>

@@ -6,7 +6,6 @@ const SpinnyThing=()=>{
 
   useEffect(()=>{
     let domNodeCurrent = domNode.current;
-    console.log(domNodeCurrent)
   }, [domNode]);
 
   return (
