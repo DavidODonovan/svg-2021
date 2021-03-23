@@ -110,6 +110,11 @@ const NavMenu=()=>{
         <li>
           <MyLink to="/25-trigger-anim-on-click">25 Trigger Anim onClick</MyLink>
         </li>
+
+        <li>
+          <MyLink to="/26-coloured-blobs">26 Coloured Blobs</MyLink>
+        </li>
+
       </NavBox>
     </nav>
   );
