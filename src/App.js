@@ -24,7 +24,6 @@ import ColourInterpolation from './components/17ColourInterpolation';
 import AnimatingPaths from './components/18AnimatingPaths';
 import BasicAnimPulsingThing from './components/19BasicAnimPulsingThing';
 import SVGBackgroundSVGs from './components/20SVGBackgroundSVGs';
-import AnimateDrawPaths from './components/21AnimateDrawPathsBasic';
 import GetPathLengthInReact from './components/21GetPathLengthInReact';
 import DashArrayAndDashOffset from './components/22DashArrayAndDashOffset';
 import MultiValuedDashArrays from './components/23MultiValuedDashArrays';
