@@ -83,7 +83,7 @@ const NavMenu=()=>{
         </li>
 
         <li>
-          <MyLink to="/19-basic-svg-anim-pulsing-thing">19 SVG Pulsing Thing Animation</MyLink>
+          <MyLink to="/19-basic-svg-anim-pulsing-thing">19 Pulsing Thing </MyLink>
         </li>
 
         <li>
@@ -113,6 +113,9 @@ const NavMenu=()=>{
 
         <li>
           <MyLink to="/26-coloured-blobs">26 Coloured Blobs</MyLink>
+        </li>
+        <li>
+          <MyLink to="/27-combining-separate-files">27 Combining Separate Files</MyLink>
         </li>
 
       </NavBox>

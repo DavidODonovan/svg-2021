@@ -30,6 +30,7 @@ import MultiValuedDashArrays from './components/23MultiValuedDashArrays';
 import AnimatingDashOffsetWithKeyFrames from './components/24AnimatingDashOffsetWithKeyFrames';
 import TriggerAnimOnClick from './components/25TriggerAnimOnClick';
 import ColouredBlobs from "./components/26ColouredBlobs";
+import Combo from './components/27CombiningSeparateFiles';
 
 function App() {
   return (
@@ -69,6 +70,7 @@ function App() {
         <Route path="/24-animating-dashoffset-with-keyframes" component={AnimatingDashOffsetWithKeyFrames}/>
         <Route path="/25-trigger-anim-on-click" component={TriggerAnimOnClick}/>
         <Route path="/26-coloured-blobs" component={ColouredBlobs}/>
+        <Route path="/27-combining-separate-files" component={Combo}/>
 
       </Router>
     </div>
