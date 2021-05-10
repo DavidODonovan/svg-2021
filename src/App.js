@@ -24,10 +24,13 @@ import ColourInterpolation from './components/17ColourInterpolation';
 import AnimatingPaths from './components/18AnimatingPaths';
 import BasicAnimPulsingThing from './components/19BasicAnimPulsingThing';
 import SVGBackgroundSVGs from './components/20SVGBackgroundSVGs';
-import AnimateDrawPaths from './components/21AnimateDrawPathsBasic';
 import GetPathLengthInReact from './components/21GetPathLengthInReact';
 import DashArrayAndDashOffset from './components/22DashArrayAndDashOffset';
-
+import MultiValuedDashArrays from './components/23MultiValuedDashArrays';
+import AnimatingDashOffsetWithKeyFrames from './components/24AnimatingDashOffsetWithKeyFrames';
+import TriggerAnimOnClick from './components/25TriggerAnimOnClick';
+import ColouredBlobs from "./components/26ColouredBlobs";
+import Combo from './components/27CombiningSeparateFiles';
 
 function App() {
   return (
@@ -63,6 +66,11 @@ function App() {
         <Route path="/20-svg-background-svgs" component={SVGBackgroundSVGs}/>
         <Route path="/21-get-path-length-in-react" component={GetPathLengthInReact}/>
         <Route path="/22-stroke-dasharray-dashoffset" component={DashArrayAndDashOffset}/>
+        <Route path="/23-multi-valued-dash-arrays" component={MultiValuedDashArrays}/>
+        <Route path="/24-animating-dashoffset-with-keyframes" component={AnimatingDashOffsetWithKeyFrames}/>
+        <Route path="/25-trigger-anim-on-click" component={TriggerAnimOnClick}/>
+        <Route path="/26-coloured-blobs" component={ColouredBlobs}/>
+        <Route path="/27-combining-separate-files" component={Combo}/>
 
       </Router>
     </div>

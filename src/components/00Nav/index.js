@@ -83,7 +83,7 @@ const NavMenu=()=>{
         </li>
 
         <li>
-          <MyLink to="/19-basic-svg-anim-pulsing-thing">19 SVG Pulsing Thing Animation</MyLink>
+          <MyLink to="/19-basic-svg-anim-pulsing-thing">19 Pulsing Thing </MyLink>
         </li>
 
         <li>
@@ -97,6 +97,25 @@ const NavMenu=()=>{
 
         <li>
           <MyLink to="/22-stroke-dasharray-dashoffset">22 stroke-dasharray & stroke-dashoffset</MyLink>
+        </li>
+
+        <li>
+          <MyLink to="/23-multi-valued-dash-arrays">23 Multi valued dasharrays</MyLink>
+        </li>
+
+        <li>
+          <MyLink to="/24-animating-dashoffset-with-keyframes">24 Animating dashoffset with keyframes</MyLink>
+        </li>
+
+        <li>
+          <MyLink to="/25-trigger-anim-on-click">25 Trigger Anim onClick</MyLink>
+        </li>
+
+        <li>
+          <MyLink to="/26-coloured-blobs">26 Coloured Blobs</MyLink>
+        </li>
+        <li>
+          <MyLink to="/27-combining-separate-files">27 Combining Separate Files</MyLink>
         </li>
 
       </NavBox>
